@@ -1,0 +1,40 @@
+//---------------------------------------------------------
+// Global UI Styling
+//---------------------------------------------------------
+body {
+  background-color: $color-black;
+  font-family: $font-default;
+  transition: $transition;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  @include on-event {
+    text-decoration: underline;
+    color: $white;
+  }
+  text-decoration: none;
+  color: $white;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  margin: 0 0 5px;
+}

@@ -1,0 +1,127 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+/// Event wrapper
+/// @author Harry Roberts
+/// @param {Bool} $self [false] - Whether or not to include current selector
+/// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
+@mixin on-event($self: false) {
+  @if $self {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  } @else {
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+}
+
+/// Make a context based selector a little more friendly
+/// @author Hugo Giraudel
+/// @param {String} $context
+@mixin when-inside($context) {
+  #{$context} & {
+    @content;
+  }
+}
+
+@mixin button-variant($color, $background, $border) {
+
+  $darken-bg: darken($background, 10%);
+  $darken-bg-17: darken($background, 17%);
+  $darken-border-focus: darken($border, 25%);
+  $darken-border-hover: darken($border, 12%);
+  $darken-border-active: darken($border, 12%);
+  $darken-border-active-deep: darken($border, 25%);
+
+  border-color: $border;
+  background-color: $background;
+  color: $color;
+
+  &.focus,
+  &:focus {
+    border-color: $darken-border-focus;
+    background-color: $darken-bg;
+    color: $color;
+  }
+
+  &:hover {
+    border-color: $darken-border-hover;
+    background-color: $darken-bg;
+    color: $color;
+  }
+
+  &.active,
+  &:active,
+  .open>&.dropdown-toggle {
+    border-color: $darken-border-active;
+    background-image: none;
+    background-color: $darken-bg;
+    color: $color;
+
+    &.focus,
+    &:focus,
+    &:hover {
+      border-color: $darken-border-active-deep;
+      background-color: $darken-bg-17;
+      color: $color;
+    }
+  }
+
+  &.disabled,
+  &[disabled],
+
+  .badge {
+    background-color: $color;
+    color: $background;
+  }
+}
+
+/* paddings, margins and width */
+$i: 0;
+@while $i < 51 {
+  .mt#{$i} {
+    margin-top: ($i*1px);
+  }
+
+  .mr#{$i} {
+    margin-right: ($i*1px);
+  }
+
+  .mb#{$i} {
+    margin-bottom: ($i*1px);
+  }
+
+  .ml#{$i} {
+    margin-left: ($i*1px);
+  }
+
+  .pt#{$i} {
+    padding-top: ($i*1px);
+  }
+
+  .pr#{$i} {
+    padding-right: ($i*1px);
+  }
+
+  .pb#{$i} {
+    padding-bottom: ($i*1px);
+  }
+
+  .pl#{$i} {
+    padding-left: ($i*1px);
+  }
+
+  .w#{$i}p {
+    width: ($i*1%);
+  }
+
+  $i: $i + 5;
+}
