@@ -9,8 +9,9 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     cssnano = require('gulp-cssnano'),
     sourcemaps = require('gulp-sourcemaps'),
+    gulpIncludeTemplate = require("gulp-include-template"),
+    imagemin = require('gulp-imagemin'),
     package = require('./package.json');
-
 
 var banner = [
   '/*!\n' +
@@ -54,6 +55,30 @@ gulp.task('js',function(){
     .pipe(browserSync.reload({stream:true, once: true}));
 });
 
+gulp.task('images', () =>
+  gulp.src('src/img/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('./app/assets/img'))
+    .pipe(imagemin([
+      imagemin.gifsicle({interlaced: true}),
+      imagemin.jpegtran({progressive: true}),
+      imagemin.optipng({optimizationLevel: 1}),
+      imagemin.svgo({
+        plugins: [
+          {removeViewBox: true},
+          {cleanupIDs: false}
+        ]
+      })
+    ]))
+);
+
+gulp.task("includeTemplate", function() {
+  return gulp.src("app/sections/index.html")
+    .pipe(gulpIncludeTemplate())
+    .pipe(gulp.dest("./app"))
+    .pipe(browserSync.reload({stream:true}));
+});
+
 gulp.task('browser-sync', function() {
     browserSync.init(null, {
         server: {
@@ -66,8 +91,9 @@ gulp.task('bs-reload', function () {
     browserSync.reload();
 });
 
-gulp.task('default', ['css', 'js', 'browser-sync'], function () {
+gulp.task('default', ['css', 'js', 'images', 'includeTemplate', 'browser-sync'], function () {
+    gulp.watch("src/img/**/*", ['bs-reload', 'images']);
     gulp.watch("src/scss/**/*.scss", ['css']);
     gulp.watch("src/js/*.js", ['js']);
-    gulp.watch("app/*.html", ['bs-reload']);
+    gulp.watch("app/sections/*.html", ['bs-reload', 'includeTemplate']);
 });

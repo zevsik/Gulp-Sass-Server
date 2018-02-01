@@ -1,3 +1,333 @@
+/* paddings, margins and width */
+.mt0 {
+  margin-top: 0px; }
+
+.mr0 {
+  margin-right: 0px; }
+
+.mb0 {
+  margin-bottom: 0px; }
+
+.ml0 {
+  margin-left: 0px; }
+
+.pt0 {
+  padding-top: 0px; }
+
+.pr0 {
+  padding-right: 0px; }
+
+.pb0 {
+  padding-bottom: 0px; }
+
+.pl0 {
+  padding-left: 0px; }
+
+.w0p {
+  width: 0%; }
+
+.mt5 {
+  margin-top: 5px; }
+
+.mr5 {
+  margin-right: 5px; }
+
+.mb5 {
+  margin-bottom: 5px; }
+
+.ml5 {
+  margin-left: 5px; }
+
+.pt5 {
+  padding-top: 5px; }
+
+.pr5 {
+  padding-right: 5px; }
+
+.pb5 {
+  padding-bottom: 5px; }
+
+.pl5 {
+  padding-left: 5px; }
+
+.w5p {
+  width: 5%; }
+
+.mt10 {
+  margin-top: 10px; }
+
+.mr10 {
+  margin-right: 10px; }
+
+.mb10 {
+  margin-bottom: 10px; }
+
+.ml10 {
+  margin-left: 10px; }
+
+.pt10 {
+  padding-top: 10px; }
+
+.pr10 {
+  padding-right: 10px; }
+
+.pb10 {
+  padding-bottom: 10px; }
+
+.pl10 {
+  padding-left: 10px; }
+
+.w10p {
+  width: 10%; }
+
+.mt15 {
+  margin-top: 15px; }
+
+.mr15 {
+  margin-right: 15px; }
+
+.mb15 {
+  margin-bottom: 15px; }
+
+.ml15 {
+  margin-left: 15px; }
+
+.pt15 {
+  padding-top: 15px; }
+
+.pr15 {
+  padding-right: 15px; }
+
+.pb15 {
+  padding-bottom: 15px; }
+
+.pl15 {
+  padding-left: 15px; }
+
+.w15p {
+  width: 15%; }
+
+.mt20 {
+  margin-top: 20px; }
+
+.mr20 {
+  margin-right: 20px; }
+
+.mb20 {
+  margin-bottom: 20px; }
+
+.ml20 {
+  margin-left: 20px; }
+
+.pt20 {
+  padding-top: 20px; }
+
+.pr20 {
+  padding-right: 20px; }
+
+.pb20 {
+  padding-bottom: 20px; }
+
+.pl20 {
+  padding-left: 20px; }
+
+.w20p {
+  width: 20%; }
+
+.mt25 {
+  margin-top: 25px; }
+
+.mr25 {
+  margin-right: 25px; }
+
+.mb25 {
+  margin-bottom: 25px; }
+
+.ml25 {
+  margin-left: 25px; }
+
+.pt25 {
+  padding-top: 25px; }
+
+.pr25 {
+  padding-right: 25px; }
+
+.pb25 {
+  padding-bottom: 25px; }
+
+.pl25 {
+  padding-left: 25px; }
+
+.w25p {
+  width: 25%; }
+
+.mt30 {
+  margin-top: 30px; }
+
+.mr30 {
+  margin-right: 30px; }
+
+.mb30 {
+  margin-bottom: 30px; }
+
+.ml30 {
+  margin-left: 30px; }
+
+.pt30 {
+  padding-top: 30px; }
+
+.pr30 {
+  padding-right: 30px; }
+
+.pb30 {
+  padding-bottom: 30px; }
+
+.pl30 {
+  padding-left: 30px; }
+
+.w30p {
+  width: 30%; }
+
+.mt35 {
+  margin-top: 35px; }
+
+.mr35 {
+  margin-right: 35px; }
+
+.mb35 {
+  margin-bottom: 35px; }
+
+.ml35 {
+  margin-left: 35px; }
+
+.pt35 {
+  padding-top: 35px; }
+
+.pr35 {
+  padding-right: 35px; }
+
+.pb35 {
+  padding-bottom: 35px; }
+
+.pl35 {
+  padding-left: 35px; }
+
+.w35p {
+  width: 35%; }
+
+.mt40 {
+  margin-top: 40px; }
+
+.mr40 {
+  margin-right: 40px; }
+
+.mb40 {
+  margin-bottom: 40px; }
+
+.ml40 {
+  margin-left: 40px; }
+
+.pt40 {
+  padding-top: 40px; }
+
+.pr40 {
+  padding-right: 40px; }
+
+.pb40 {
+  padding-bottom: 40px; }
+
+.pl40 {
+  padding-left: 40px; }
+
+.w40p {
+  width: 40%; }
+
+.mt45 {
+  margin-top: 45px; }
+
+.mr45 {
+  margin-right: 45px; }
+
+.mb45 {
+  margin-bottom: 45px; }
+
+.ml45 {
+  margin-left: 45px; }
+
+.pt45 {
+  padding-top: 45px; }
+
+.pr45 {
+  padding-right: 45px; }
+
+.pb45 {
+  padding-bottom: 45px; }
+
+.pl45 {
+  padding-left: 45px; }
+
+.w45p {
+  width: 45%; }
+
+.mt50 {
+  margin-top: 50px; }
+
+.mr50 {
+  margin-right: 50px; }
+
+.mb50 {
+  margin-bottom: 50px; }
+
+.ml50 {
+  margin-left: 50px; }
+
+.pt50 {
+  padding-top: 50px; }
+
+.pr50 {
+  padding-right: 50px; }
+
+.pb50 {
+  padding-bottom: 50px; }
+
+.pl50 {
+  padding-left: 50px; }
+
+.w50p {
+  width: 50%; }
+
+body {
+  color: #444;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  transition: transition;
+  background: url("/assets/img/123.jpeg") no-repeat; }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility; }
+
+a {
+  text-decoration: none;
+  color: #fff; }
+  a:hover, a:active, a:focus {
+    text-decoration: underline;
+    color: #fff; }
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+p {
+  margin: 0 0 5px; }
+
 .clear:before, .clear:after {
   content: ' ';
   display: table; }
@@ -6,24 +336,6 @@
   *zoom: 1; }
   .clear:after {
     clear: both; }
-
-* {
-  box-sizing: border-box;
-  font-smoothing: antialiased;
-  text-rendering: optimizeLegibility; }
-
-html {
-  font-size: 62.5%;
-  background: radial-gradient(ellipse at center, #F7F6F0 0, #c2ba8c 80%, #b0a66b 100%); }
-
-body {
-  font: 300 13px/1.6 'Helvetica Neue', Helvetica, Arial;
-  color: #444;
-  transition: all .4s .3s ease-in; }
-
-body, html {
-  min-height: 100vh;
-  overflow: hidden; }
 
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -391,42 +703,6 @@ textarea {
   font: inherit;
   /* 2 */ }
 
-.logo {
-  margin: -58px 0 0 -100px;
-  position: absolute;
-  top: 50%;
-  left: 50%; }
-
-.nav ul {
-  list-style: none; }
-
-@font-face {
-  font-family: 'Font-Name';
-  src: url("../fonts/font-name.eot");
-  src: url("../fonts/font-name.eot?#iefix") format("embedded-opentype"), url("../fonts/font-name.woff") format("woff"), url("../fonts/font-name.ttf") format("truetype"), url("../fonts/font-name.svg#font-name") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-::-moz-selection {
-  background: #333;
-  color: #fff;
-  text-shadow: none; }
-
-::selection {
-  background: #333;
-  color: #fff;
-  text-shadow: none; }
-
-::-moz-selection {
-  background: #333;
-  color: #fff;
-  text-shadow: none; }
-
-::-webkit-selection {
-  background: #333;
-  color: #fff;
-  text-shadow: none; }
-
 @media print {
   * {
     background: transparent !important;
@@ -465,3 +741,42 @@ textarea {
   h2,
   h3 {
     page-break-after: avoid; } }
+
+@font-face {
+  font-family: 'Font-Name';
+  src: url("../fonts/font-name.eot");
+  src: url("../fonts/font-name.eot?#iefix") format("embedded-opentype"), url("../fonts/font-name.woff") format("woff"), url("../fonts/font-name.ttf") format("truetype"), url("../fonts/font-name.svg#font-name") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.header {
+  height: 100px;
+  border: 2px solid #000; }
+
+.nav {
+  background: yellow; }
+  .nav ul {
+    list-style: none; }
+
+.sidebar {
+  background: red;
+  width: 300px;
+  height: 100%; }
+
+.main {
+  background: grey;
+  display: -ms-flexbox;
+  display: flex;
+  height: calc(100vh - 200px); }
+
+.container {
+  -ms-flex: 1;
+      flex: 1; }
+
+.footer {
+  background: #000;
+  border: 2px solid #fff;
+  height: 100px;
+  padding: 20px; }
+  .footer p {
+    color: #fff; }

@@ -1,3 +1,9 @@
 .main {
+  background: grey;
+  display: flex;
+  height: calc(100vh - 200px);
+}
 
+.container {
+  flex: 1;
 }

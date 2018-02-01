@@ -2,9 +2,10 @@
 // Global UI Styling
 //---------------------------------------------------------
 body {
-  background-color: $color-black;
+  color: $text-color;
   font-family: $font-default;
   transition: $transition;
+  background: url('/assets/img/123.jpeg') no-repeat;
 }
 
 html {
@@ -22,10 +23,10 @@ html {
 a {
   @include on-event {
     text-decoration: underline;
-    color: $white;
+    color: $color-white;
   }
   text-decoration: none;
-  color: $white;
+  color: $color-white;
 }
 
 ul,
