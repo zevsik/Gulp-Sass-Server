@@ -38,4 +38,7 @@ Thumbs.db
 ehthumbs.db
 Desktop.ini
 $RECYCLE.BIN/
+
+## Project
 /.idea/
+/app/assets/
