@@ -1,10 +1,12 @@
 // UTILS
 @import 'utils/mixins';
 @import 'utils/variables';
+@import 'utils/sprite';
 
 // Base
 @import 'base/breakpoints';
 @import 'base/default';
+@import 'base/fonts';
 @import 'base/helpers';
 @import 'base/normalize';
 @import 'base/print';

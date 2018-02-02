@@ -1,4 +1,11 @@
 .header {
   height: 100px;
-  border: 2px solid $color-black;
+
+  .logo {
+    padding: 20px;
+
+    p {
+      color: $color-black;
+    }
+  }
 }

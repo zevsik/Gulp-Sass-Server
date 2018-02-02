@@ -6,4 +6,9 @@
 
 .container {
   flex: 1;
+  padding: 20px;
+
+  p {
+    color: $color-white;
+  }
 }

@@ -1,5 +1,7 @@
-// Init
+// Run project
 
-#npm install & yarn install
+` 
+npm install or yarn install
 
-#gulp
+gulp
+`

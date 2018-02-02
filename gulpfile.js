@@ -11,6 +11,7 @@ var gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps'),
     gulpIncludeTemplate = require("gulp-include-template"),
     imagemin = require('gulp-imagemin'),
+    spritesmith = require('gulp.spritesmith'),
     package = require('./package.json');
 
 var banner = [
@@ -36,6 +37,13 @@ gulp.task('css', function () {
     .pipe(header(banner, { package : package }))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('app/assets/css'))
+    .pipe(browserSync.reload({stream:true}));
+});
+
+gulp.task('fonts', function () {
+  return gulp.src('src/fonts/*')
+    .pipe(sourcemaps.init())
+    .pipe(gulp.dest('app/assets/fonts'))
     .pipe(browserSync.reload({stream:true}));
 });
 
@@ -72,8 +80,19 @@ gulp.task('images', () =>
     ]))
 );
 
+gulp.task('sprite', function () {
+  var spriteData = gulp.src('src/img/png/*.png')
+    .pipe(spritesmith({
+      /* this whole image path is used in css background declarations */
+      imgName: 'sprite.png',
+      cssName: 'sprite.css'
+    }));
+  spriteData.img.pipe(gulp.dest('app/assets/css/'));
+  spriteData.css.pipe(gulp.dest('src/scss/utils'));
+});
+
 gulp.task("includeTemplate", function() {
-  return gulp.src("app/sections/index.html")
+  return gulp.src("src/sections/index.html")
     .pipe(gulpIncludeTemplate())
     .pipe(gulp.dest("./app"))
     .pipe(browserSync.reload({stream:true}));
@@ -91,9 +110,9 @@ gulp.task('bs-reload', function () {
     browserSync.reload();
 });
 
-gulp.task('default', ['css', 'js', 'images', 'includeTemplate', 'browser-sync'], function () {
+gulp.task('default', ['css', 'js', 'images', 'sprite', 'fonts', 'includeTemplate', 'browser-sync'], function () {
     gulp.watch("src/img/**/*", ['bs-reload', 'images']);
     gulp.watch("src/scss/**/*.scss", ['css']);
     gulp.watch("src/js/*.js", ['js']);
-    gulp.watch("app/sections/*.html", ['bs-reload', 'includeTemplate']);
+    gulp.watch("src/sections/**/*.html", ['bs-reload', 'includeTemplate']);
 });
