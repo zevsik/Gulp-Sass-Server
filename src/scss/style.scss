@@ -1,3 +1,6 @@
+// Bootstrap Grid
+@import "../../node_modules/bootstrap/scss/bootstrap-grid";
+
 // UTILS
 @import 'utils/mixins';
 @import 'utils/variables';
@@ -28,3 +31,5 @@
 
 // VENDOR
 @import 'vendor/external';
+
+

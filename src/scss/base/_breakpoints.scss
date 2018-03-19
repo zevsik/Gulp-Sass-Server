@@ -1,18 +1,12 @@
-@media only screen and (min-width:320px) {
+@include media-breakpoint-up(xs) {}
+@include media-breakpoint-up(sm) {}
+@include media-breakpoint-up(md) {}
+@include media-breakpoint-up(lg) {}
+@include media-breakpoint-up(xl) {}
 
-}
-@media only screen and (min-width:480px) {
-
-}
-@media only screen and (min-width:768px) {
-
-}
-@media only screen and (min-width:1024px) {
-
-}
-@media only screen and (min-width:1140px) {
-
-}
-@media only screen and (min-width:1280px) {
-
+// Example usage:
+@include media-breakpoint-up(sm) {
+  .some-class {
+    display: block;
+  }
 }
