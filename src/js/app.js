@@ -3,7 +3,7 @@
   'use strict';
 
   $(function () {
-    // FastShell
+      console.log('test JS')
   });
 
 })(jQuery, window, document);
