@@ -37,16 +37,13 @@ gulp.task('fonts', function () {
 gulp.task('js', function () {
   gulp.src([
     './node_modules/jquery/dist/jquery.js',
-    'src/js/app.js'
+    'src/js/libs/jquery.touchSwipe.js',
+    'src/js/app.js',
   ])
     .pipe(sourcemaps.init())
-    .pipe(jshint('.jshintrc'))
     .pipe(jshint.reporter('default'))
     .pipe(gulp.dest('app/assets/js'))
     .pipe(uglify())
-    .on('error', function (err) {
-      gutil.log(gutil.colors.red('[Error]'), err.toString());
-    })
     .pipe(rename({suffix: '.min'}))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('app/assets/js'))

@@ -1,41 +1,13 @@
-$sideBarWidth: 240px;
-$sideBareOffSet: $sideBarWidth;
-$primary: #31dfbc;
-$secondary: #1fb5a9;
-$tertiary: #df314d;
-
-.fullHeight {
-  height: 100%;
-}
-
-.fullWidth {
-  width: 100%;
-}
-.fullSize {
-  @extend .fullWidth;
-  @extend .fullHeight;
-}
-body,
-html {
-  @extend .fullHeight;
-  overflow: hidden;
-  font-family: helvetica;
-  font-size: 16px;
-  font-weight: 100;
-}
-a {
-  text-decoration: none;
-}
-
-.container {
+.swipe-area-wrapper {
   position: relative;
-  @extend .fullSize;
+  height: 100%;
+  width: 100%;
   left: 0;
   transition: left 0.4s ease-in-out;
 }
 
 .open-sidebar {
-  left: $sideBareOffSet;
+  left: 240px;
 }
 
 .swipe-area {
@@ -43,16 +15,18 @@ a {
   width: 50px;
   left: 0;
   top: 0;
-  @extend .fullHeight;
+  height: 100%;
   background: #f3f3f3;
-  z-index: 0;
+  z-index: 0
 }
+
 #sidebar {
+  background: #DF314D;
   position: absolute;
-  background: $primary;
-  left: $sideBareOffSet * -1;
-  width: $sideBarWidth;
-  @extend .fullHeight;
+  width: 240px;
+  height: 100%;
+  left: -240px;
+  box-sizing: border-box;
 
   ul {
     li {
@@ -71,25 +45,29 @@ a {
 }
 
 .main-content {
-  @extend .fullSize;
+  width: 100%;
+  height: 100%;
   padding: 10px;
   position: relative;
-  #sidebar-toggle {
-    background: $tertiary;
-    border-radius: 3px;
+}
+
+#sidebar-toggle {
+  background: #DF314D;
+  border-radius: 3px;
+  display: block;
+  position: relative;
+  padding: 10px 7px;
+  float: left;
+
+  .bar {
     display: block;
-    position: relative;
-    padding: 10px 7px;
-    float: left;
-    .bar {
-      display: block;
-      width: 18px;
-      height: 2px;
-      background-color: #fff;
-      border-radius: 1px;
-      & + .bar {
-        margin-top: 3px;
-      }
+    width: 18px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 1px;
+
+    & + .bar {
+      margin-top: 3px;
     }
   }
 }
