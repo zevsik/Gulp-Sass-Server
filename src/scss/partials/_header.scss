@@ -1,11 +1,52 @@
 .header {
-  height: 100px;
 
-  .logo {
-    padding: 20px;
+  &__top {
+    background: $color-grey-dark;
 
-    p {
-      color: $color-black;
+    .header__info {
+      display: flex;
+      justify-content: flex-end;
+      height: 60px;
+      align-items: center;
+      max-width: $max-width;
+      width: 100%;
+    }
+  }
+
+  &__bot {
+    background: $color-white;
+
+    .header__nav-bar {
+      display: flex;
+      height: 100px;
+      align-items: center;
+      max-width: $max-width;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+
+  &__phone {
+    font-size: 15px;
+    font-weight: 600;
+    padding-right: 30px;
+  }
+
+  &__mail {
+    text-decoration: underline;
+    font-size: 13px;
+    font-weight: 600;
+    padding-right: 30px;
+  }
+
+  &__search,
+  &__auth {
+    padding-right: 10px;
+
+    i {
+      color: $color-white;
+      font-size: 18px;
+
     }
   }
 }

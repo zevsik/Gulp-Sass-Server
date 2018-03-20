@@ -3,12 +3,3 @@
   display: flex;
   height: calc(100vh - 200px);
 }
-
-.container {
-  flex: 1;
-  padding: 20px;
-
-  p {
-    color: $color-white;
-  }
-}

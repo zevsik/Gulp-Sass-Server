@@ -3,17 +3,15 @@
 
 // UTILS
 @import 'utils/mixins';
+@import 'utils/normalize';
 @import 'utils/variables';
-@import 'utils/sprite';
 
 // Base
+@import 'base/base';
 @import 'base/breakpoints';
-@import 'base/default';
 @import 'base/fonts';
 @import 'base/helpers';
-@import 'base/normalize';
 @import 'base/print';
-@import 'base/typography';
 
 
 // COMPONENTS & ELEMENTS
@@ -31,6 +29,6 @@
 
 
 // VENDOR
-@import 'vendor/external';
+@import 'vendor/font-awesome.min';
 
 

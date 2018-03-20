@@ -1,12 +1,22 @@
 .nav {
-  background: yellow;
+  background: $color-white;
 
-  ul {
-    list-style: none;
+  &__list {
+    display: flex;
+  }
 
-    li {
+  &__item {
+    margin-left: 25px;
+
+    a {
+      color: $color-blue;
+      font-size: 16px;
+      text-shadow: $text-shadow;
+    }
+
+    &--active {
       a {
-
+        color: darken($color-blue, 10%);
       }
     }
   }

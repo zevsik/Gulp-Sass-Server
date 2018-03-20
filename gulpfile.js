@@ -50,33 +50,22 @@ gulp.task('js', function () {
     .pipe(browserSync.reload({stream: true, once: true}));
 });
 
-// gulp.task('images', () =>
-//   gulp.src('src/img/*')
-//     .pipe(imagemin())
-//     .pipe(gulp.dest('./app/assets/img'))
-//     .pipe(imagemin([
-//       imagemin.gifsicle({interlaced: true}),
-//       imagemin.jpegtran({progressive: true}),
-//       imagemin.optipng({optimizationLevel: 1}),
-//       imagemin.svgo({
-//         plugins: [
-//           {removeViewBox: true},
-//           {cleanupIDs: false}
-//         ]
-//       })
-//     ]))
-// );
-
-// gulp.task('sprite', function () {
-//   var spriteData = gulp.src('src/img/png/*.png')
-//     .pipe(spritesmith({
-//       /* this whole image path is used in css background declarations */
-//       imgName: 'sprite.png',
-//       cssName: 'sprite.css'
-//     }));
-//   spriteData.img.pipe(gulp.dest('app/assets/css/'));
-//   spriteData.css.pipe(gulp.dest('src/scss/utils'));
-// });
+gulp.task('images', () =>
+  gulp.src('src/img/*/**')
+    .pipe(imagemin())
+    .pipe(gulp.dest('./app/assets/img'))
+    .pipe(imagemin([
+      imagemin.gifsicle({interlaced: true}),
+      imagemin.jpegtran({progressive: true}),
+      imagemin.optipng({optimizationLevel: 1}),
+      imagemin.svgo({
+        plugins: [
+          {removeViewBox: true},
+          {cleanupIDs: false}
+        ]
+      })
+    ]))
+);
 
 gulp.task("includeTemplate", function () {
   return gulp.src("src/pages/index.html")
@@ -102,7 +91,7 @@ gulp.task('clear', function () {
     .pipe(clean());
 });
 
-gulp.task('default', ['css', 'js', 'fonts', 'includeTemplate', 'browser-sync'], function () {
+gulp.task('default', ['css', 'js', 'images', 'fonts', 'includeTemplate', 'browser-sync'], function () {
   gulp.watch("src/img/**/*", ['bs-reload']);
   gulp.watch("src/scss/**/*.scss", ['css']);
   gulp.watch("src/js/*.js", ['js']);

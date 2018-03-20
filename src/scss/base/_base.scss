@@ -21,10 +21,6 @@ html {
 }
 
 a {
-  @include on-event {
-    text-decoration: underline;
-    color: $color-white;
-  }
   text-decoration: none;
   color: $color-white;
 }

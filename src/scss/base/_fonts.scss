@@ -1,14 +1,9 @@
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'FontAwesome';
   font-weight: normal;
-  src: url('/assets/fonts/OpenSansRegular.woff2') format('woff2'),
-       url('/assets/fonts/OpenSansRegular.woff') format('woff');
+  src:  url('/assets/FontAwesome.otf') format('otf'),
+        url('/assets/fontawesome-webfont.eot') format('eot'),
+        url('/assets/fontawesome-webfont.ttf') format('ttf'),
+        url('/assets/fontawesome-webfont.woff') format('woff'),
+        url('/assets/fontawesome-webfont.woff2') format('woff2');
 }
-
-@font-face {
-  font-family: 'Open Sans';
-  font-weight: bold;
-  src: url('/assets/fonts/OpenSansBold.woff2') format('woff2'),
-       url('/assets/fonts/OpenSansBold.woff') format('woff');
-}
-
