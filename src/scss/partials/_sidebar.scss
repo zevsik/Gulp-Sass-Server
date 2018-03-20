@@ -1,10 +1,8 @@
 .sidebar {
-  background: red;
-  width: 300px;
+  background: #DF314D;
+  position: absolute;
+  width: 240px;
   height: 100%;
-  padding: 20px;
-
-  p {
-    color: $color-white;
-  }
+  left: -240px;
+  box-sizing: border-box;
 }

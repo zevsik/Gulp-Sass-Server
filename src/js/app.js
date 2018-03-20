@@ -12,11 +12,11 @@ $(function () {
       swipeStatus:function(event, phase, direction, distance, duration, fingers)
       {
         if (phase=="move" && direction =="right") {
-          $(".swipe-area__wrapper").addClass("open-sidebar");
+          $(".container").addClass("open-sidebar");
           return false;
         }
         if (phase=="move" && direction =="left") {
-          $(".swipe-area__wrapper").removeClass("open-sidebar");
+          $(".container").removeClass("open-sidebar");
           return false;
         }
       }
