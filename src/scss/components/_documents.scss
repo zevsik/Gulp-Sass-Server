@@ -1,0 +1,177 @@
+$duration: 300ms;
+$timing-fn: ease;
+$turquoise: #1ABC9C;
+$wet-asphalt: #34495E;
+$midnight-blue: #2C3E50;
+$clouds: #ECF0F1;
+
+.documents-wrapper {
+  margin: 60px 0;
+
+  ul {
+    padding: 0;
+    margin: 0 0 50px;
+
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+
+  li {
+    position: relative;
+    float: left;
+    width: 285px;
+    height: 285px;
+    padding: 0;
+    list-style: none;
+    perspective: 590px;
+
+    a  {
+      display: inline-block;
+      vertical-align: top;
+      text-decoration: none;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 16px;
+      color: transparentize(#fff, .1);
+    }
+
+    p  {
+      font-size: 12px;
+      line-height: 1.5;
+      color: transparentize(#fff, .2);
+    }
+
+    .normal {
+      width: 100%;
+      height: 100%;
+      background-color: $clouds;
+      color: transparentize($wet-asphalt, .4);
+      box-shadow: inset 0 2px 20px darken($clouds, 2);
+      text-align: center;
+      font-size: 50px;
+      line-height: 200px;
+
+      svg {
+        pointer-events: none;
+        width: 50px;
+        path {
+          fill: transparentize($wet-asphalt, .8);
+        }
+      }
+    }
+  }
+
+  .info {
+    transform: rotate3d(1,0,0, 90deg);
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background-color: transparentize($turquoise, .1);
+  }
+}
+
+.document {
+  &__item {
+    width: 293px;
+    height: 293px;
+    padding: 20px 40px;
+    color: $color-white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: right;
+
+    &--1 {
+      background: url('../img/pipes/pipe-1.png') center no-repeat;
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  &__desc {
+    p {
+      font-size: 13px;
+      margin-bottom: 0;
+      text-decoration: underline;
+    }
+
+    p:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+// Animation
+.in-top .info {
+  transform-origin: 50% 0%;
+  animation: in-top $duration $timing-fn 0ms 1 forwards;
+}
+.in-right .info {
+  transform-origin: 100% 0%;
+  animation: in-right $duration $timing-fn 0ms 1 forwards;
+}
+.in-bottom .info {
+  transform-origin: 50% 100%;
+  animation: in-bottom $duration $timing-fn 0ms 1 forwards;
+}
+.in-left .info {
+  transform-origin: 0% 0%;
+  animation: in-left $duration $timing-fn 0ms 1 forwards;
+}
+
+.out-top .info {
+  transform-origin: 50% 0%;
+  animation: out-top $duration $timing-fn 0ms 1 forwards;
+}
+.out-right .info {
+  transform-origin: 100% 50%;
+  animation: out-right $duration $timing-fn 0ms 1 forwards;
+}
+.out-bottom .info {
+  transform-origin: 50% 100%;
+  animation: out-bottom $duration $timing-fn 0ms 1 forwards;
+}
+.out-left .info {
+  transform-origin: 0% 0%;
+  animation: out-left $duration $timing-fn 0ms 1 forwards;
+}
+
+@keyframes in-top {
+  from {transform: rotate3d(-1,0,0, 90deg)}
+  to   {transform: rotate3d(0,0,0, 0deg)}}
+@keyframes in-right {
+  from {transform: rotate3d(0,-1,0, 90deg)}
+  to   {transform: rotate3d(0,0,0, 0deg)}}
+@keyframes in-bottom {
+  from {transform: rotate3d(1,0,0, 90deg)}
+  to   {transform: rotate3d(0,0,0, 0deg)}}
+@keyframes in-left {
+  from {transform: rotate3d(0,1,0, 90deg)}
+  to   {transform: rotate3d(0,0,0, 0deg)}}
+
+@keyframes out-top {
+  from {transform: rotate3d(0,0,0, 0deg)}
+  to   {transform: rotate3d(-1,0,0, 104deg)}}
+@keyframes out-right {
+  from {transform: rotate3d(0,0,0, 0deg)}
+  to   {transform: rotate3d(0,-1,0, 104deg)}}
+@keyframes out-bottom {
+  from {transform: rotate3d(0,0,0, 0deg)}
+  to   {transform: rotate3d(1,0,0, 104deg)}}
+@keyframes out-left {
+  from {transform: rotate3d(0,0,0, 0deg)}
+  to   {transform: rotate3d(0,1,0, 104deg)}}
+
+

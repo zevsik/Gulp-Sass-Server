@@ -15,7 +15,7 @@ var gulp = require('gulp'),
 
 
 gulp.task('css', function () {
-  return gulp.src('src/scss/style.scss')
+  return gulp.src('src/scss/app.scss')
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer('last 4 version'))
@@ -31,6 +31,12 @@ gulp.task('fonts', function () {
   return gulp.src('src/fonts/*')
     .pipe(sourcemaps.init())
     .pipe(gulp.dest('app/assets/fonts'))
+    .pipe(browserSync.reload({stream: true}));
+});
+
+gulp.task('files', function () {
+  return gulp.src('src/files/*')
+    .pipe(gulp.dest('app/assets/files'))
     .pipe(browserSync.reload({stream: true}));
 });
 
@@ -68,7 +74,7 @@ gulp.task('images', () =>
 );
 
 gulp.task("includeTemplate", function () {
-  return gulp.src("src/pages/index.html")
+  return gulp.src("src/pages/*")
     .pipe(gulpIncludeTemplate())
     .pipe(gulp.dest("./app"))
     .pipe(browserSync.reload({stream: true}));
@@ -91,8 +97,10 @@ gulp.task('clear', function () {
     .pipe(clean());
 });
 
-gulp.task('default', ['css', 'js', 'images', 'fonts', 'includeTemplate', 'browser-sync'], function () {
+gulp.task('default', ['css', 'js', 'images', 'fonts', 'files', 'includeTemplate', 'browser-sync'], function () {
   gulp.watch("src/img/**/*", ['bs-reload']);
+  gulp.watch("src/fonts/**/*", ['bs-reload']);
+  gulp.watch("src/files/**/*", ['bs-reload']);
   gulp.watch("src/scss/**/*.scss", ['css']);
   gulp.watch("src/js/*.js", ['js']);
   gulp.watch("src/pages/**/*.html", ['bs-reload', 'includeTemplate']);

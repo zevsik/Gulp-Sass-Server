@@ -1,0 +1,63 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <title>НТТЗ ИТЗ</title>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <link href="/assets/css/app.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+<% include('includes/header.html'); %>
+<% include('components/banner.html'); %>
+<% include('components/breadcrumbs.html'); %>
+
+<main class="main" role="main">
+  <div class="container">
+
+    <section>
+      <!-- Bootstrap CSS -->
+      <!-- jQuery first, then Bootstrap JS. -->
+      <!-- Nav tabs -->
+
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" href="#profile" role="tab" data-toggle="tab">profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#buzz" role="tab" data-toggle="tab">buzz</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#references" role="tab" data-toggle="tab">references</a>
+        </li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane in active" id="profile">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad atque autem consectetur cum dolorum eos est incidunt iste iusto labore necessitatibus odio provident quod, quos reiciendis sapiente soluta voluptatibus voluptatum!</p>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="buzz">bbb</div>
+        <div role="tabpanel" class="tab-pane fade" id="references">ccc</div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<% include('includes/footer.html'); %>
+
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/jquery.touchSwipe.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/app.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+.service {
+  padding: 50px 0;
+
+  &__item  {
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    color: $color-blue;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  &__img {
+    margin-bottom: 20px;
+
+    img {
+      width: 100%;
+    }
+  }
+}

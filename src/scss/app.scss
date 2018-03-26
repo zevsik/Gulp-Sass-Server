@@ -1,5 +1,5 @@
 // Bootstrap Grid
-@import "../../node_modules/bootstrap/scss/bootstrap-grid";
+@import "../../node_modules/bootstrap/scss/bootstrap";
 
 // UTILS
 @import 'utils/mixins';
@@ -15,8 +15,16 @@
 
 
 // COMPONENTS & ELEMENTS
+@import 'components/banner';
+@import 'components/breadcrumbs';
 @import 'components/buttons';
+@import "components/documents";
 @import 'components/inputs';
+@import 'components/services';
+
+
+// PAGES
+@import 'pages/home';
 
 
 // PARTIALS

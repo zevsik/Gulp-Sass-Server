@@ -1,9 +1,51 @@
-.footer {
-  background: $color-black;
-  height: 100px;
-  padding: 20px;
+footer {
+  border: 1px solid $border-color;
+  background: $color-white;
+  padding: 60px 0 55px;
+}
 
-  p {
-    color: $color-white;
+.footer {
+  margin: 0 auto;
+  max-width: $max-width;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+  p, a {
+    font-weight: 600;
+    color: $color-grey;
+  }
+
+  &__phones {
+    display: flex;
+    margin-bottom: 15px;
+
+    p {
+      padding: 0 20px;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  &__mail {
+    display: flex;
+    margin-bottom: 55px;
+    justify-content: center;
+
+    p {
+      padding: 0 20px;
+    }
+
+    a {
+      border-bottom: 1px dotted $color-grey;
+    }
+  }
+
+  &__address {
+    p {
+      margin-bottom: 15px;
+    }
   }
 }

@@ -2,10 +2,9 @@
 // Global UI Styling
 //---------------------------------------------------------
 body {
-  fon-size: $font-size;
+  font-size: $font-size;
   color: $text-color;
-  font-family: $font-default;
-  transition: $transition;
+  font-family: 'xxx';
 }
 
 html {
@@ -22,7 +21,8 @@ html {
 
 a {
   text-decoration: none;
-  color: $color-white;
+  color: $color-blue;
+  transition: $transition;
 }
 
 ul,
@@ -35,3 +35,4 @@ ol {
 p {
   margin: 0 0 5px;
 }
+

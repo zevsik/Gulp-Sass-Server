@@ -7,3 +7,24 @@
         url('/assets/fontawesome-webfont.woff') format('woff'),
         url('/assets/fontawesome-webfont.woff2') format('woff2');
 }
+
+@font-face {
+  font-family: 'xxx';
+  src:  url('/assets/fonts/ProximaNova-Regular.woff') format('woff');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'xxx';
+  src:  url('/assets/fonts/ProximaNova-RegularIt.woff') format('woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'xxx';
+  src:  url('/assets/fonts/ProximaNova-Extrabld.woff') format('woff');
+  font-weight: 500;
+}
+
+
+
