@@ -1,0 +1,21 @@
+{
+  "name": "Bootstrapv4",
+  "authors": [
+    "Eldar <eldar.giniyatov@saritasa.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "lightgallery.js": "1.0.2"
+  }
+}

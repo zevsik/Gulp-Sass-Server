@@ -18,37 +18,65 @@
 <% include('includes/header.html'); %>
 <% include('components/banner.html'); %>
 <% include('components/breadcrumbs.html'); %>
-
+<% include('components/about.html'); %>
 <main class="main" role="main">
   <div class="container">
 
     <section>
-      <!-- Bootstrap CSS -->
-      <!-- jQuery first, then Bootstrap JS. -->
-      <!-- Nav tabs -->
-
-      <ul class="nav nav-tabs" role="tablist">
-        <li class="nav-item">
-          <a class="nav-link active" href="#profile" role="tab" data-toggle="tab">profile</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#buzz" role="tab" data-toggle="tab">buzz</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#references" role="tab" data-toggle="tab">references</a>
-        </li>
-      </ul>
+      <!--<ul class="nav nav-tabs" role="tablist">-->
+        <!--<li class="nav-item">-->
+          <!--<a class="nav-link active" href="#profile" role="tab" data-toggle="tab">profile</a>-->
+        <!--</li>-->
+        <!--<li class="nav-item">-->
+          <!--<a class="nav-link" href="#buzz" role="tab" data-toggle="tab">buzz</a>-->
+        <!--</li>-->
+        <!--<li class="nav-item">-->
+          <!--<a class="nav-link" href="#references" role="tab" data-toggle="tab">references</a>-->
+        <!--</li>-->
+      <!--</ul>-->
 
       <!-- Tab panes -->
-      <div class="tab-content">
-        <div role="tabpanel" class="tab-pane in active" id="profile">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad atque autem consectetur cum dolorum eos est incidunt iste iusto labore necessitatibus odio provident quod, quos reiciendis sapiente soluta voluptatibus voluptatum!</p>
-        </div>
-        <div role="tabpanel" class="tab-pane fade" id="buzz">bbb</div>
-        <div role="tabpanel" class="tab-pane fade" id="references">ccc</div>
-      </div>
+      <!--<div class="tab-content">-->
+        <!--<div role="tabpanel" class="tab-pane in active" id="profile">-->
+          <!---->
+        <!--</div>-->
+        <!--<div role="tabpanel" class="tab-pane fade" id="buzz">bbb</div>-->
+        <!--<div role="tabpanel" class="tab-pane fade" id="references">ccc</div>-->
+      <!--</div>-->
     </section>
 
+    <section class="about__desc">
+      <h2>О Нижнетагильском трубном заводе Металлинвест</h2>
+      <p>Нижнетагильский трубный завод Металлинвест (НТТЗМ) - оснащен современным оборудованием по производству стальных электросварных труб, позволяющим производить трубу любой длины по желанию заказчика.</p>
+
+      <p>
+        <strong>  Завод «НТТЗМ» производит трубы из углеродистых сталей С245, 3, 10,  20, ЗСП u низколегированных сталей С345, 09Г2С:</strong>
+      </p>
+
+      <ul>
+        <li>квадратного сечения типоразмеров от 15*15 до 200*200 мм.</li>
+        <li>прямоугольного сечения от 30*20 до 200*160 мм.</li>
+        <li>круглого сечения диаметром от 57 до 219 мм.</li>
+      </ul>
+
+      <p>
+        <stong>Электросварные трубы из стали 8 ПС:</stong>
+      </p>
+
+      <ul>
+        <li>квадратного сечения от 20*20 до 40*40 мм.</li>
+        <li>прямоугольного сечения от 30*20 до 80*40 мм.</li>
+        <li>круглого сечения диаметром от 57 до 219 мм.</li>
+      </ul>
+
+      <p>По требованию заказчика предусмотрен выпуск труб в размер, удаление наружного u внутреннего грата с поверхности труб, а также нанесение антикоррозийного покрытия u цинкование.</p>
+
+      <p>В 2014 г. Нижнетагильский Трубный завод Металлинвест запустил в эксплуатацию собственную линию по производству равнополочного швеллера, с толщиной стенки от 3 до 6 мм из различных марок стали (ст.3 СП 09Г2С). Швеллер производится на импортном оборудовании в соответствие ГОСТ 8278-83.</p>
+
+      <p>Стабильно высокое качество готовых изделий обеспечивает не только современное оборудование, но u высоко квалифицированные специалисты прокатчики завода.</p>
+    </section>
+
+    <% include('components/gallery.html'); %>
   </div>
 </main>
 
@@ -56,7 +84,8 @@
 
 <script src="/assets/js/jquery.min.js"></script>
 <script src="/assets/js/jquery.touchSwipe.min.js"></script>
-<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/bootstrap.bundle.js"></script>
+<script src="/assets/js/lightgallery.js"></script>
 <script src="/assets/js/app.min.js"></script>
 
 </body>

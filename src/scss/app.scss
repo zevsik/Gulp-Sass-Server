@@ -19,8 +19,12 @@
 @import 'components/breadcrumbs';
 @import 'components/buttons';
 @import "components/documents";
+@import "components/feedback";
 @import 'components/inputs';
+@import 'components/lightgallery';
+@import 'components/news';
 @import 'components/services';
+@import 'components/text-format';
 
 
 // PAGES
@@ -38,5 +42,8 @@
 
 // VENDOR
 @import 'vendor/font-awesome.min';
+@import 'vendor/slick-slider';
+@import 'vendor/light-gallery/lightgallery';
+
 
 

@@ -1,5 +1,5 @@
 .btn {
-  width: 140px;
+  min-width: 140px;
   height: 40px;
   box-shadow: $box-shadow;
   text-shadow: $text-shadow;
@@ -25,6 +25,10 @@
       background-image: $color-blue-gradient-revert;
 
     }
+  }
+
+  &--medium {
+    width: 240px;
   }
 
   &--large {

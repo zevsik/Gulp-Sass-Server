@@ -2,7 +2,7 @@
 
 $(function () {
 
-  // Init swipe-menu
+  // Init Swipe-menu
   $(window).load(function(){
     $("[data-toggle]").click(function() {
       var toggle_el = $(this).data("toggle");
@@ -23,7 +23,21 @@ $(function () {
     });
   });
 
-  // Init document box
+  // Init Gallery
+  $(document).ready(function() {
+    $("#lightgallery").lightGallery({
+      selector: '.item'});
+  });
+
+
+  Plugin.prototype.isVideo = function (src, index) {
+
+    if (!src) {
+      throw new Error("Make sure that slide " + index + " has an image/video src");
+    }
+  }
+
+  // Init Document Box
   var nodes  = document.querySelectorAll('li'),
     _nodes = [].slice.call(nodes, 0);
 
