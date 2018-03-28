@@ -1,5 +1,5 @@
 // Bootstrap Grid
-@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/bootstrap-grid";
 
 // UTILS
 @import 'utils/mixins';
@@ -43,7 +43,7 @@
 // VENDOR
 @import 'vendor/font-awesome.min';
 @import 'vendor/slick-slider';
-@import 'vendor/light-gallery/lightgallery';
+@import 'vendor/maginific-popup/main.scss';
 
 
 
