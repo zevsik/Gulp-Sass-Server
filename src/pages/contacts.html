@@ -2,7 +2,7 @@
 <html class="no-js">
 <head>
   <meta charset="utf-8">
-  <title>НТТЗ ИТЗ - О компании</title>
+  <title>НТТЗ ИТЗ - Контакты</title>
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="">
@@ -19,39 +19,64 @@
 <% include('components/banner.html'); %>
 <% include('components/breadcrumbs.html'); %>
 
-<div class="tabs-about-wrapper">
+<main class="main" role="main">
   <div class="container">
-    <ul class="nav nav-tabs--about" role="tablist">
-      <li class="nav-item">
-        <a class="nav-link active" href="#profile" role="tab" data-toggle="tab">Нижнитагильский трубный завод
-          Металлинвест</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#buzz" role="tab" data-toggle="tab">Ирбитский трубный
-          завод</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#references" role="tab" data-toggle="tab">Сертификаты</a>
-      </li>
-    </ul>
-  </div>
-</div>
+    <div class="contacts-wrapper">
 
-<div class="tabs-content-about-wrapper">
-  <div class="container">
-    <div class="tab-content tab-content--about">
-      <div role="tabpanel" class="tab-pane in active" id="profile">
-        <% include('components/about.html'); %>
-      </div>
-      <div role="tabpanel" class="tab-pane fade" id="buzz">
-        <% include('components/about.html'); %>
-      </div>
-      <div role="tabpanel" class="tab-pane fade" id="references">
-        <% include('components/about.html'); %>
+      <div class="row no-gutters">
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+          <div class="contact">
+            <div class="contact__city">г.Нижний Тагил</div>
+            <div class="contact__info">
+              <p>г. Нижний Тагил, ул. Долгая 5</p>
+              <p>Тел: +7 (3435) 495-776, 8-800- 775-17- 87 (88,89) звонок бесплатный.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+          <div class="contact">
+            <div class="contact__city">г.Нижний Тагил</div>
+            <div class="contact__info">
+              <p>г. Нижний Тагил, ул. Долгая 5</p>
+              <p>Тел: +7 (3435) 495-776, 8-800- 775-17- 87 (88,89) звонок бесплатный.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+          <div class="contact">
+            <div class="contact__city">г.Нижний Тагил</div>
+            <div class="contact__info">
+              <p>г. Нижний Тагил, ул. Долгая 5</p>
+              <p>Тел: +7 (3435) 495-776, 8-800- 775-17- 87 (88,89) звонок бесплатный.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+          <div class="contact">
+            <div class="contact__address">
+              <p>Адрес производства НТТЗ</p>
+              <p>622021 Свердловская обл., г. Нижний Тагил, ул. Красных Зорь 7</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+          <div class="contact contact--blue-light">
+            <div class="contact__address">
+              <p>Адрес производства НТТЗ</p>
+              <p>622021 Свердловская обл., г. Нижний Тагил, ул. Красных Зорь 7</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
+    <% include('components/feedback.html'); %>
   </div>
-</div>
+</main>
 
 <section class="text-format">
   <div class="container">

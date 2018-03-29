@@ -63,6 +63,8 @@ gulp.task('js', function () {
     './node_modules/jquery/dist/jquery.js',
     'src/js/libs/jquery.touchSwipe.js',
     'src/js/libs/jquery.magnific-popup.min.js',
+    'src/js/libs/tether.min.js',
+    'src/js/libs/bootstrap.js',
     'src/js/libs/slick.js',
     'src/js/app.js',
   ])

@@ -36,10 +36,16 @@
   }
 }
 
+.home-wrapper {
+  padding: 0 0 80px;
+}
+
 .home {
-  padding: 100px;
+  padding: 73px;
   color: $color-white;
   background: url('../img/bg/about-bg.png') no-repeat;
+  background-size: cover;
+  max-height: 585px;
   position: relative;
 
   &::after {
@@ -64,11 +70,11 @@
 
   &__desc {
     margin-bottom: 20px;
-    position: relative;
-    z-index: 2;
 
     p {
       font-size: 18px;
+      position: relative;
+      z-index: 2;
     }
   }
 }

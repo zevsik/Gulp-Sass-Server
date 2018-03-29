@@ -23,6 +23,10 @@
       max-width: $max-width;
       justify-content: space-between;
       width: 100%;
+
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
     }
   }
 
@@ -30,6 +34,12 @@
     font-size: 15px;
     font-weight: 600;
     padding-right: 30px;
+    color: $color-white;
+
+    &:hover {
+      text-decoration: none;
+      color: $color-white;
+    }
   }
 
   &__mail {
@@ -37,16 +47,30 @@
     font-size: 13px;
     font-weight: 600;
     padding-right: 30px;
+    color: $color-white;
+
+    &:hover {
+      color: $color-white;
+      text-decoration: none;
+    }
   }
 
   &__search,
   &__auth {
-    padding-right: 10px;
+    padding-right: 20px;
 
     i {
       color: $color-white;
       font-size: 18px;
-
+      cursor: pointer;
     }
+
+    i:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__auth {
+    padding-right: 40px;
   }
 }

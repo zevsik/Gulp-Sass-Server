@@ -1,41 +1,53 @@
 .mobile-menu {
-  position: relative;
+  position: fixed;
   height: 100%;
   width: 100%;
-  left: 0;
-  -webkit-transition: left 0.4s ease-in-out;
-  -moz-transition: left 0.4s ease-in-out;
-  -ms-transition: left 0.4s ease-in-out;
-  -o-transition: left 0.4s ease-in-out;
-  transition: left 0.4s ease-in-out;
+  right: 0;
+  transition: right 0.3s ease-in-out;
+  z-index: 100;
+  display: none;
+
+  @include media-breakpoint-down(sm) {
+    display: block;
+  }
 }
 
-.mobile-menu.open-sidebar { left: 240px; }
+.mobile-menu.open-sidebar {
+  right: 240px;
+
+  #sidebar-toggle {
+    right: 250px;
+  }
+}
 
 .swipe-area {
   position: absolute;
   width: 50px;
-  left: 0;
+  right: 0;
   top: 0;
   height: 100%;
   background: #f3f3f3;
   z-index: 0;
+  box-shadow: -5px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 #sidebar {
-  background: #DF314D;
+  background: $color-blue;
   position: absolute;
   width: 240px;
   height: 100%;
-  left: -240px;
+  right: -240px;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
 
-#sidebar ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+#sidebar .sidebar__logo {
+  margin: 30px auto;
+  text-align: center;
+
+  img {
+    width: 100px;
+  }
 }
 
 #sidebar ul li { margin: 0; }
@@ -47,15 +59,18 @@
   color: white;
   text-decoration: none;
   display: block;
-  border-bottom: 1px solid #C9223D;
-  -webkit-transition: background 0.3s ease-in-out;
-  -moz-transition: background 0.3s ease-in-out;
-  -ms-transition: background 0.3s ease-in-out;
-  -o-transition: background 0.3s ease-in-out;
+  border-bottom: 1px solid $color-white;
   transition: background 0.3s ease-in-out;
-}
 
-#sidebar ul li:hover a { background: #C9223D; }
+  &:hover {
+    background: $color-white;
+    color: $color-blue;
+  }
+
+  &:first-child {
+    border-top: 1px solid $color-white;
+  }
+}
 
 .main-content {
   width: 100%;
@@ -81,12 +96,13 @@
 }
 
 #sidebar-toggle {
-  background: #DF314D;
+  background: $color-blue;
   border-radius: 3px;
   display: block;
-  position: relative;
   padding: 10px 7px;
   float: left;
+  position: fixed;
+  right: 8px;
 }
 
 #sidebar-toggle .bar {

@@ -20,10 +20,61 @@
 <% include('components/banner.html'); %>
 <% include('components/breadcrumbs.html'); %>
 
+<div class="tabs-about-wrapper">
+  <div class="container">
+    <ul class="nav nav-tabs--about" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" href="#profile" role="tab" data-toggle="tab">Труба электросварная круглая</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#buzz" role="tab" data-toggle="tab">Труба профильная квадратная</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#references" role="tab" data-toggle="tab">Труба профильная прямоугольная</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="tabs-content-about-wrapper">
+  <div class="container">
+    <div class="tab-content tab-content--about">
+      <div role="tabpanel" class="tab-pane in active" id="profile">
+
+        <div class="product">
+
+          <div class="col-6">
+            <p><strong>Размеры:</strong> от 80х80 до 210х210мм</p>
+            <p><strong>Толщина стенки:</strong> 3-22мм</p>
+            <p><strong>Длина труб:</strong> от 6 до 18 метров и 20 метров (мерной и немерной длины)</p>
+            <p><strong>Марка стали:</strong> углеродистые низколегированные стали</p>
+          </div>
+
+          <div class="col-6">
+            <p>
+              Трубы ГОСТа 10705-80 изготавливаются из углеродистой и низколегированной стали, применяемые для
+              трубопроводов и конструкций различного назначения.
+              Стандарт не распространяется на стальные трубы, применяемые для изготовления теплоэлектронагревателей.
+              Производятся трубы с помощью метода электросварки, в результате чего между элементами сварки появляется
+              шов – прямой или спиральной формы.
+            </p>
+          </div>
+
+        </div>
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="buzz">
+        content 2
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="references">
+        content 3
+      </div>
+    </div>
+  </div>
+</div>
+
 <main class="main" role="main">
   <div class="container">
 
-    <% include('components/documents.html'); %>
     <% include('components/feedback.html'); %>
 
   </div>

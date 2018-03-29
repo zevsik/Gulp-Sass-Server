@@ -1,7 +1,11 @@
 footer {
-  border: 1px solid $border-color;
+  border: 2px solid $border-color;
   background: $color-white;
-  padding: 60px 0 55px;
+  padding: 60px 0 45px;
+
+  @include media-breakpoint-down(sm) {
+    padding: 35px 0 25px;
+  }
 }
 
 .footer {
@@ -20,6 +24,10 @@ footer {
     display: flex;
     margin-bottom: 15px;
 
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+    }
+
     p {
       padding: 0 20px;
     }
@@ -31,7 +39,7 @@ footer {
 
   &__mail {
     display: flex;
-    margin-bottom: 55px;
+    margin-bottom: 40px;
     justify-content: center;
 
     p {

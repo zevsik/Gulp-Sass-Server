@@ -1,5 +1,5 @@
 // Bootstrap Grid
-@import "../../node_modules/bootstrap/scss/bootstrap-grid";
+@import "../../node_modules/bootstrap/scss/bootstrap";
 
 // UTILS
 @import 'utils/mixins';
@@ -15,19 +15,23 @@
 
 
 // COMPONENTS & ELEMENTS
+@import 'components/about';
 @import 'components/banner';
 @import 'components/breadcrumbs';
 @import 'components/buttons';
 @import "components/documents";
 @import "components/feedback";
 @import 'components/inputs';
-@import 'components/lightgallery';
+@import 'components/gallery';
 @import 'components/news';
+@import 'components/product';
 @import 'components/services';
+@import 'components/tabs';
 @import 'components/text-format';
 
 
 // PAGES
+@import 'pages/contacts';
 @import 'pages/home';
 
 

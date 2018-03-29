@@ -4,7 +4,7 @@
 body {
   font-size: $font-size;
   color: $text-color;
-  //font-family: 'xxx';
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
 }
 
 html {
@@ -23,6 +23,17 @@ a {
   text-decoration: none;
   color: $color-blue;
   transition: $transition;
+  outline: 0;
+}
+
+input,
+select,
+textarea {
+  &:hover,
+  &:focus,
+  &:active {
+    outline: 0;
+  }
 }
 
 ul,
@@ -36,6 +47,14 @@ p {
   margin: 0 0 5px;
 }
 
-.main {
+main {
   background: $border-color;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 25px;
 }

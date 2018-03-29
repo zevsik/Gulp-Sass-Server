@@ -6,11 +6,11 @@
   width: 100%;
 
   &__item {
-    padding: 35px 42px;
+    padding: 33px 32px 20px;
     background: $color-white;
     height: 100%;
     border: 1px solid $border-color;
-    min-height: 292px;;
+    min-height: 293px;
 
     &--blue {
       background: $color-blue;
@@ -34,6 +34,7 @@
       }
 
       .news__date {
+        font-size: 13px;
         margin-bottom: 15px;
         color: $color-white;
       }
@@ -57,11 +58,12 @@
   &__img {
     width: 170px;
     height: 170px;
-    border: 2px solid $color-grey-light;
     margin-right: 40px;
 
     img {
       width: 100%;
+      min-width: 170px;
+      object-fit: cover;
     }
   }
 
@@ -78,15 +80,63 @@
   &__date {
     color: $color-grey-light;
     margin-bottom: 15px;
+    font-size: 12px;
   }
 
   &__desc {
     p {
       margin-bottom: 15px;
+      font-size: 12px;
+    }
+  }
+
+  .pagination {
+    margin: 40px 0 60px;
+
+    a {
+      color: #bdbdbd;
+    }
+
+    li {
+      &.active {
+        a {
+          border: 1px solid #dee2e6;
+          background: $color-white;
+          color: $text-color;
+        }
+      }
+
+      &.disabled {
+        cursor: not-allowed;
+
+        a {
+          color: #bdbdbd;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .d-flex {
+      flex-direction: column;
+    }
+
+    &__item {
+      min-height: inherit;
+      padding: 15px;
+    }
+
+    &__img {
+      margin-bottom: 15px;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    &__item {
+      min-height: inherit;
+      padding: 15px;
     }
   }
 }
 
-.pagination {
-  margin: 40px 0 60px;
-}
+

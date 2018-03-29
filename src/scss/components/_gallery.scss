@@ -1,0 +1,25 @@
+.zoom-gallery {
+  padding: 10px 0 70px;
+
+  a {
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      background: url('../img/bg/blue-transparent-pattern.png') center no-repeat;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}

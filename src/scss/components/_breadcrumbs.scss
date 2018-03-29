@@ -1,15 +1,15 @@
 .breadcrumbs-wrapper {
-  height: 62px;
   background: $border-color;
 }
 
 .breadcrumbs {
   display: flex;
   align-items: center;
-  height: 62px;
+  padding: 27px 0;
 
   &__list {
     display: flex;
+    flex-wrap: wrap;
 
     a {
       color: $color-blue;

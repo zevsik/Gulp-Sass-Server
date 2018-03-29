@@ -1,6 +1,12 @@
 **Run project**
 
-npm install or yarn install
+```
+$ npm install
 
-gulp
+```
+
+gulp build - сборка проекта
+gulp watch - сборка проекта + livereload  // press F5
+gulp clear - очистка папки /dist
+
 

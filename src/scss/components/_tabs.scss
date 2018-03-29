@@ -1,0 +1,84 @@
+// Tabs home page
+.nav-tabs-home {
+  background: $color-white;
+  padding: 35px 42px 28px;
+  border-bottom: 0;
+
+  a {
+    font-size: 20px;
+    color: $text-color;
+    padding-right: 30px;
+    font-weight: 500;
+
+    &.active {
+      color: #2261a9;
+    }
+  }
+}
+
+.tab-content-home {
+  min-height: 493px;
+  background: $color-white;
+
+  &__info {
+    padding: 0 42px 25px;
+
+    &--border {
+      padding: 25px 42px;
+      border-top: 1px solid $border-color;
+    }
+  }
+
+  &__date {
+    color: $color-grey-light;
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  &__desc {
+    p {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// Tabs services page
+.tabs-about-wrapper {
+  background-color: #4f8fd5;
+}
+
+.nav-tabs--about {
+  border-bottom: 0;
+
+  a {
+    width: 270px;
+    height: 63px;
+    font-size: 14px;
+    color: $color-white;
+    font-weight: 500;
+    border-bottom: 5px solid #3d80c9;
+
+    &.active {
+      background-color: #3d80c9;
+    }
+  }
+}
+
+.tab-content--about{
+  background: $border-color;
+  padding: 30px 0;
+}
+
+.tabs-content-about-wrapper {
+  background-color: $border-color;
+}

@@ -1,6 +1,6 @@
 .feedback-wrapper {
   background: $border-color;
-  padding: 60px 0;
+  padding: 0 0 80px;
 }
 
 .feedback {
@@ -9,7 +9,7 @@
 
     color: $color-white;
     background: $color-blue;
-    padding: 60px 70px;
+    padding: 60px 50px;
     text-align: center;
 
     h3 {
@@ -24,19 +24,27 @@
     .btn {
       margin-bottom: 18px;
     }
+
+    @include media-breakpoint-down(sm) {
+      padding: 25px;
+    }
   }
 
   &__right {
     background: $color-white;
-    padding: 45px 40px;
+    padding: 33px 40px;
+
+    @include media-breakpoint-down(md) {
+      padding: 33px 40px 60px;
+    }
 
     .form-group {
-      margin-bottom: 20px;
+      margin-bottom: 32px;
       display: flex;
       flex-direction: column;
 
       label {
-        margin-bottom: 10px;
+        margin-bottom: 4px;
         position: relative;
         font-size: 12px;
 
@@ -48,7 +56,7 @@
               content: '*';
               position: absolute;
               top: 0;
-              right: -5px;
+              right: -8px;
               font-size: 12px;
               color: $color-red;
             }
@@ -59,7 +67,7 @@
       input {
         border: 0;
         border-bottom: 1px solid #a5a5a5;
-        padding: 0 0 15px;
+        padding: 0 0 11px;
 
         &:focus,
         &:hover {
@@ -72,11 +80,30 @@
           border-bottom: 1px solid $color-red;
         }
       }
+
+      textarea {
+        border: 0;
+        border-bottom: 1px solid #a5a5a5;
+        padding: 0 0 11px;
+        height: 60px;
+        resize: none;
+
+        &.error {
+          input {
+            border-bottom: 1px solid $color-red;
+          }
+        }
+
+        @include media-breakpoint-down(lg) {
+          height: 81px;
+        }
+      }
     }
   }
 
   &__upload-file {
     @extend .center;
+    padding: 20px;
 
     height: 100%;
     text-align: center;
@@ -84,6 +111,33 @@
 
     p {
       color: #8e8e8e;
+    }
+
+    i {
+      color: #8e8e8e;
+      font-size: 50px;
+    }
+
+    &:hover {
+      cursor: copy;
+
+      i {
+        color: darken(#8e8e8e, 5%);
+      }
+    }
+  }
+
+  &__btn {
+    background: $clear;
+    border: 0;
+    position: absolute;
+    bottom: -38px;
+    left: calc(50% - 44px);
+
+    &:hover,
+    &:focus {
+      opacity: 0.9;
+      cursor: pointer;
     }
   }
 }

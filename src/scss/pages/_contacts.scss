@@ -1,0 +1,38 @@
+.contacts-wrapper {
+  margin-bottom: 60px;
+}
+
+.contact {
+  padding: 40px;
+  background: $color-white;
+  border: 1px solid $border-color;
+
+  &__city {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__info {
+    p {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__address {
+    background-color: #2360a6;
+    padding: 40px;
+    color: $color-white;
+
+    &--blue-light {
+      background-color: #3f7cc2;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    p + p {
+      font-size: 16px;
+    }
+  }
+}

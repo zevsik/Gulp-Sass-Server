@@ -1,4 +1,4 @@
-.nav-menu {
+.nav__menu {
   background: $color-white;
 
   &__list {
@@ -12,11 +12,29 @@
       color: $color-blue;
       font-size: 16px;
       text-shadow: $text-shadow;
+      padding-bottom: 3px;
+    }
+
+    a:hover {
+      text-decoration: none;
+      border-bottom: 1px solid;
     }
 
     &--active {
       a {
-        color: darken($color-blue, 10%);
+        color: $text-color;
+      }
+
+      a:hover {
+        text-decoration: none;
+        border-bottom: 0;
+        cursor: default;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      a {
+        font-size: 12px;
       }
     }
   }
