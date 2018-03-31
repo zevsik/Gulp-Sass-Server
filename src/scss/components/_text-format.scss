@@ -21,6 +21,11 @@
 
   @include media-breakpoint-down(sm) {
     padding: 25px 15px 5px;
+
+    h2 {
+      font-size: 22px;
+      text-align: center;
+    }
   }
 }
 

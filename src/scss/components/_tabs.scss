@@ -61,12 +61,36 @@
   border-bottom: 0;
 
   a {
-    width: 270px;
-    height: 63px;
+    width: 100%;
+    height: 80px;
     font-size: 14px;
     color: $color-white;
     font-weight: 500;
     border-bottom: 5px solid #3d80c9;
+    max-width: 158px;
+    min-width: 158px;
+    text-align: center;
+    padding: auto 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.active {
+      background-color: #3d80c9;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    li {
+      width: 100%;
+    }
+
+    a {
+      height: 36px;
+      max-width: 100%;
+      border-bottom: 5px solid #4f8fd5;
+      font-size: 13px;
+    }
 
     &.active {
       background-color: #3d80c9;
@@ -82,3 +106,4 @@
 .tabs-content-about-wrapper {
   background-color: $border-color;
 }
+

@@ -26,16 +26,23 @@
             <a href="tel:8(3435)495-776" class="header__phone">8 (3435) 495-776</a>
             <a href="mailto:info@nttzm.ru" class="header__mail">info@nttzm.ru</a>
 
-            <div class="header__search">
-              <i class="fa fa-search" aria-hidden="true"></i>
+            <div class="header__search dropdown">
+              <i class="fa fa-search" aria-hidden="true" id="dropdown-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+              <div class="dropdown-menu" aria-labelledby="dropdown-search">
+                <input type="search" placeholder="Поиск ...">
+              </div>
             </div>
 
-            <div class="header__auth">
-              <i class="fa fa-user" aria-hidden="true"></i>
+            <div class="header__auth dropdown">
+              <i class="fa fa-user" aria-hidden="true" id="dropdown-auth" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+              <div class="dropdown-menu" aria-labelledby="dropdown-auth">
+                <a class="dropdown-item" href="#">Авторириция</a>
+                <a class="dropdown-item" href="#">Выйти</a>
+              </div>
             </div>
 
             <div class="header__callback-button">
-              <button class="btn btn--blue">Оставить заявку</button>
+              <button class="btn btn--blue" data-toggle="modal" data-target="#feedback">Оставить заявку</button>
             </div>
           </div>
 
@@ -69,7 +76,6 @@
           </div>
         </div>
 
-
       </div>
     </div>
   </div>
@@ -99,7 +105,8 @@
         <div class="col-12">
           <ul class="breadcrumbs__list">
             <li><a href="">Главная страница</a></li>
-            <li><span>Нижнетагильский трубный завод Металлинвест</span></li>
+            <li><a href="">Нижнетагильский трубный завод Металлинвест</a></li>
+            <li><span>Нижнетагильский трубный завод Металлинвест - статья</span></li>
           </ul>
         </div>
 
@@ -310,6 +317,34 @@
     </div>
   </div>
 </footer>
+ 
+<div class="modal fade" id="feedback" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Оставить заявку</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="name">Имя:</label>
+          <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Введите ваше имя">
+        </div>
+
+        <div class="form-group">
+          <label for="tel">Телефон:</label>
+          <input type="text" class="form-control" id="tel" aria-describedby="emailHelp" placeholder="Введите ваше телефон">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+        <button type="button" class="btn btn--blue">Отправить</button>
+      </div>
+    </div>
+  </div>
+</div>
  
 
 <script src="/assets/js/all-js.min.js"></script>

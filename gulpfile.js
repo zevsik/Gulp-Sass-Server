@@ -66,6 +66,7 @@ gulp.task('js', function () {
     'src/js/libs/tether.min.js',
     'src/js/libs/bootstrap.js',
     'src/js/libs/slick.js',
+    'src/js/libs/jquery.slideandswipe.min.js',
     'src/js/app.js',
   ])
     .pipe(sourcemaps.init())

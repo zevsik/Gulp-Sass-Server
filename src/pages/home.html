@@ -2,7 +2,7 @@
 <html class="no-js">
 <head>
   <meta charset="utf-8">
-  <title>НТТЗ ИТЗ</title>
+  <title>НТТЗ ИТЗ - Главная</title>
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="">
@@ -16,6 +16,19 @@
 <body>
 
 <% include('partials/header.html'); %>
+<% include('partials/sidebar.html'); %>
+
+<nav class="nav">
+  <img src="img/swipe.png" alt="swipe image" />
+  <p>Slide and Swipe Menu demo</p>
+</nav>
+<main>
+  <h1>Slide and Swipe Menu <br>(demo)</h1>
+  <a href="#" class="ssm-toggle-nav" title="open nav">open / close navigation</a>
+</main>
+
+<div class="ssm-overlay ssm-toggle-nav"></div>
+
 
 <section class="head-part-wrapper">
   <div class="container">
@@ -32,7 +45,6 @@
 <main class="main" role="main">
   <div class="container">
 
-    <!--<% include('partials/sidebar.html'); %>-->
     <% include('components/documents.html'); %>
 
     <section class="home-wrapper">
@@ -201,15 +213,10 @@
 </div>
 
 <% include('partials/footer.html'); %>
+<% include('components/modal.html'); %>
 
 <script src="/assets/js/all-js.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
-        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
-        crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
-        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
-        crossorigin="anonymous"></script>
 
 </body>
 </html>

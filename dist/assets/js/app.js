@@ -92,3 +92,8 @@ $(function () {
     }, false);
   });
 });
+
+
+$(document).ready(function() {
+  $('.nav').slideAndSwipe();
+});

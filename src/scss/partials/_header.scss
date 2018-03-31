@@ -68,9 +68,29 @@
     i:hover {
       opacity: 0.8;
     }
+
+    a:hover {
+      background: #3d80c9;
+      color: $color-white;
+    }
+
+    input {
+      margin: 5px 10px;
+      font-size: 13px;
+      border: 0;
+      border-bottom: 1px solid rgba(0,0,0,.15);
+    }
   }
 
   &__auth {
     padding-right: 40px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    &__mail,
+    &__search,
+    &__auth {
+      display: none;
+    }
   }
 }
