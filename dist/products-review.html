@@ -15,44 +15,19 @@
 </head>
 <body>
 
-<div class="mobile-menu">
-  <div id="sidebar-menu" class="sidebar-menu">
-    <div class="sidebar-menu__logo">
-      <img src="/assets/img/logo.png" alt="logo">
-    </div>
-    <div class="sidebar-menu__search">
-      <input type="search" placeholder="Поиск ...">
-    </div>
-    <ul class="sidebar-menu__list">
-      <li class="sidebar-menu__item sidebar-menu__item--active">
-        <a href="/">О заводе</a>
-      </li>
-      <li class="sidebar-menu__item"><a href="/">Продукция</a></li>
-      <li class="sidebar-menu__item"><a href="/">Новости и акции</a></li>
-      <li class="sidebar-menu__item"><a href="/">Качество продукции</a></li>
-      <li class="sidebar-menu__item"><a href="/">Контакты</a></li>
-    </ul>
-  </div>
-
-  <div class="main-content">
-
-    <div class="swipe-area"></div>
-
-    <a href="#" data-toggle=".mobile-menu" id="sidebar-toggle">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </a>
-
-  </div>
-</div>
- 
 <header class="header">
 
   <div class="header__top">
     <div class="container">
       <div class="row">
         <div class="col-12">
+
+          <div class="sidebar-menu-overlay "></div>
+          <a href="#" class="gamburger ssm-toggle-nav">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
 
           <div class="header__info">
             <a href="tel:8(3435)495-776" class="header__phone">8 (3435) 495-776</a>
@@ -68,7 +43,7 @@
             <div class="header__auth dropdown">
               <i class="fa fa-user" aria-hidden="true" id="dropdown-auth" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
               <div class="dropdown-menu" aria-labelledby="dropdown-auth">
-                <a class="dropdown-item" href="#">Авторириция</a>
+                <a class="dropdown-item" href="#">Авторизация</a>
                 <a class="dropdown-item" href="#">Выйти</a>
               </div>
             </div>

@@ -16,19 +16,7 @@
 <body>
 
 <% include('partials/header.html'); %>
-<% include('partials/sidebar.html'); %>
-
-<nav class="nav">
-  <img src="img/swipe.png" alt="swipe image" />
-  <p>Slide and Swipe Menu demo</p>
-</nav>
-<main>
-  <h1>Slide and Swipe Menu <br>(demo)</h1>
-  <a href="#" class="ssm-toggle-nav" title="open nav">open / close navigation</a>
-</main>
-
-<div class="ssm-overlay ssm-toggle-nav"></div>
-
+<% include('partials/sidebar-menu.html'); %>
 
 <section class="head-part-wrapper">
   <div class="container">
@@ -50,7 +38,7 @@
     <section class="home-wrapper">
       <div class="row no-gutters">
 
-        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
           <div class="home">
             <h2 class="home__title">Нижнетагильский Трубный Завод Металлинвест (НТТЗМ)</h2>
             <div class="home__desc">
@@ -66,7 +54,7 @@
           </div>
         </div>
 
-        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
           <ul class="nav nav-tabs nav-tabs-home" id="myTab" role="tablist">
             <li class="nav-item">
               <a class="nav-item__link active" data-toggle="tab" href="#home" role="tab"
@@ -92,13 +80,29 @@
                 </h3>
               </div>
               <div class="tab-content-home__info tab-content-home__info--border">
-                <div class="tab-content-home__date">11 декабря 2017</div>
-                <h3 class="tab-content-home__title">Ирбитский трубный завод освоил производство новой продукции</h3>
-                <h3 class="tab-content-home__desc">
-                  <p>На Ирбитском Трубном заводе успешно освоено производство продукции по ГОСТ 20295-85 «Трубы стальные
-                    сварные для магистральных газонефтепроводов».</p>
-                  <p>Вся продукция, успешно прошла испытания на соответствие требованиям ГОСТ 20295-85.</p>
-                </h3>
+
+                  <a href="#">
+                    <div class="news__item">
+
+                      <p class="news__date">5 февраля 2017</p>
+                      <div class="d-flex">
+                        <div class="news__img">
+                          <img src="/assets/img/pipes/pipe-2.png" alt="">
+                        </div>
+
+                        <div>
+                          <h2 class="news__title">Специальная цена на трубу</h2>
+                          <div class="news__desc">
+                            <p> Предлагаем из наличия трубу из-под крана № 17, длиной менее 6 метров:</p>
+                            <p>- труба круглая прямошовная, диаметром от 48 до 245 мм ГОСТ 10705,</p>
+                            <p>- труба мелкая профильная 46-60 мм ГОСТ 8645-68</p>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </a>
+
               </div>
             </div>
 

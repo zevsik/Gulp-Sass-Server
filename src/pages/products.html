@@ -15,7 +15,7 @@
 </head>
 <body>
 
-<% include('partials/sidebar.html'); %>
+<% include('partials/sidebar-menu.html'); %>
 <% include('partials/header.html'); %>
 <% include('components/banner.html'); %>
 <% include('components/breadcrumbs.html'); %>
@@ -23,7 +23,9 @@
 <main class="main" role="main">
   <div class="container">
 
-    <% include('components/documents.html'); %>
+    <div class="documents-wrapper-gap">
+      <% include('components/documents.html'); %>
+    </div>
     <% include('components/feedback.html'); %>
 
   </div>

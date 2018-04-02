@@ -33,7 +33,7 @@ footer {
     }
 
     a {
-      text-decoration: underline;
+      text-decoration: none;
     }
   }
 
@@ -48,6 +48,11 @@ footer {
 
     a {
       border-bottom: 1px dotted $color-grey;
+    }
+
+    a:hover {
+      border-bottom: 1px dotted $clear;
+      text-decoration: none;
     }
   }
 

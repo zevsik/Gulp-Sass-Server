@@ -1,0 +1,59 @@
+.table-responsive {
+  padding: 25px 40px 20px;
+
+  @include media-breakpoint-down(sm) {
+    padding: 25px 10px 20px;
+  }
+}
+
+.table {
+  border: 1px solid #dee2e6;
+
+  thead {
+    th {
+      border: 1px solid #dee2e6;
+      text-align: center;
+    }
+  }
+
+  th {
+    white-space: nowrap;
+  }
+
+  td {
+    border: 1px solid #dee2e6;
+  }
+
+  th, td {
+    min-width: 74px;
+  }
+
+  a {
+    width: 20px;
+    height: 20px;
+    background-color: #2360a6;
+    display: block;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  a:hover {
+    color: lighten(#2360a6, 10%);
+  }
+
+  @include media-breakpoint-down(sm) {
+    th {
+      font-size: 10px;
+    }
+
+    a {
+      width: 12px;
+      height: 12px;
+    }
+
+    th, td {
+      min-width: 50px;
+    }
+  }
+}

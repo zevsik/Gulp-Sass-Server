@@ -1,4 +1,11 @@
 .header {
+  @include media-breakpoint-down(sm) {
+    position: fixed;
+    top: 0;
+    z-index: 15;
+    width: 100%;
+    box-shadow: 0 2px 2px rgba(0,0,0,.45);
+  }
 
   &__top {
     background: $color-grey-dark;
@@ -16,6 +23,10 @@
   &__bot {
     background: $color-white;
 
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+
     .header__nav-bar {
       display: flex;
       height: 100px;
@@ -23,10 +34,6 @@
       max-width: $max-width;
       justify-content: space-between;
       width: 100%;
-
-      @include media-breakpoint-down(sm) {
-        display: none;
-      }
     }
   }
 
@@ -39,6 +46,10 @@
     &:hover {
       text-decoration: none;
       color: $color-white;
+    }
+
+    @media (max-width: 358px) {
+      display: none;
     }
   }
 
@@ -67,6 +78,10 @@
 
     i:hover {
       opacity: 0.8;
+    }
+
+    a {
+      font-size: 14px;
     }
 
     a:hover {

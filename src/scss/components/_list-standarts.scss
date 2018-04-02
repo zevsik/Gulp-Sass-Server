@@ -18,6 +18,21 @@
     margin-bottom: 30px;
     text-align: center;
     padding: 15px;
+
+    &:hover,
+    &--active {
+      color: $color-white;
+      background: $color-blue;
+      text-decoration: none;
+
+      .list-standart__title{
+        color: $color-white;
+      }
+    }
+
+    &.active {
+      cursor: default;
+    }
   }
 
   &__icon {
@@ -33,6 +48,7 @@
     font-weight: 600;
     font-size: 16px;
     color: $color-blue;
+    text-transform: uppercase;
   }
 
   @include media-breakpoint-down(sm) {

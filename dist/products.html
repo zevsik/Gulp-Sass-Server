@@ -15,37 +15,25 @@
 </head>
 <body>
 
-<div class="mobile-menu">
-  <div id="sidebar-menu" class="sidebar-menu">
-    <div class="sidebar-menu__logo">
-      <img src="/assets/img/logo.png" alt="logo">
-    </div>
-    <div class="sidebar-menu__search">
-      <input type="search" placeholder="Поиск ...">
-    </div>
-    <ul class="sidebar-menu__list">
-      <li class="sidebar-menu__item sidebar-menu__item--active">
-        <a href="/">О заводе</a>
-      </li>
-      <li class="sidebar-menu__item"><a href="/">Продукция</a></li>
-      <li class="sidebar-menu__item"><a href="/">Новости и акции</a></li>
-      <li class="sidebar-menu__item"><a href="/">Качество продукции</a></li>
-      <li class="sidebar-menu__item"><a href="/">Контакты</a></li>
-    </ul>
+<div class="sidebar-menu">
+  <div class="sidebar-menu__logo">
+    <img src="/assets/img/logo.png" alt="logo">
   </div>
-
-  <div class="main-content">
-
-    <div class="swipe-area"></div>
-
-    <a href="#" data-toggle=".mobile-menu" id="sidebar-toggle">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </a>
-
+  <div class="sidebar-menu__search">
+    <input type="search" placeholder="Поиск ...">
   </div>
+  <ul class="sidebar-menu__list">
+    <li class="sidebar-menu__item sidebar-menu__item--active">
+      <a href="/">О заводе</a>
+    </li>
+    <li class="sidebar-menu__item"><a href="/">Продукция</a></li>
+    <li class="sidebar-menu__item"><a href="/">Новости и акции</a></li>
+    <li class="sidebar-menu__item"><a href="/">Качество продукции</a></li>
+    <li class="sidebar-menu__item"><a href="/">Контакты</a></li>
+  </ul>
 </div>
+
+<div class="ssm-overlay ssm-toggle-nav"></div>
  
 <header class="header">
 
@@ -53,6 +41,13 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
+
+          <div class="sidebar-menu-overlay "></div>
+          <a href="#" class="gamburger ssm-toggle-nav">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
 
           <div class="header__info">
             <a href="tel:8(3435)495-776" class="header__phone">8 (3435) 495-776</a>
@@ -68,7 +63,7 @@
             <div class="header__auth dropdown">
               <i class="fa fa-user" aria-hidden="true" id="dropdown-auth" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
               <div class="dropdown-menu" aria-labelledby="dropdown-auth">
-                <a class="dropdown-item" href="#">Авторириция</a>
+                <a class="dropdown-item" href="#">Авторизация</a>
                 <a class="dropdown-item" href="#">Выйти</a>
               </div>
             </div>
@@ -151,14 +146,15 @@
 <main class="main" role="main">
   <div class="container">
 
-    <section class="documents-wrapper">
+    <div class="documents-wrapper-gap">
+      <section class="documents-wrapper home-page">
 
     <ul>
       <li>
         <a class='normal' href="/assets/files/test-file-download.txt" download>
           <div class="document">
             <div class="document__item document__item--1 active">
-              <h3 class="document__title">Труба <br>электросварная <br>круглая</h3>
+              <h3 class="document__title">Труба электросварная круглая</h3>
               <div class="document__desc">
                 <p>ГОСТ 10704-91</p>
                 <p>ГОСТ 10705-80</p>
@@ -169,7 +165,121 @@
         </a>
         <div class='info'>
           <img src="/assets/img/icons/PDF.png" alt="">
-          <p>Скачать <br> каталог продукции</p>
+          <p>Скачать  каталог продукции</p>
+        </div>
+      </li>
+
+      <li>
+        <a class='normal' href="/assets/files/test-file-download.txt" download>
+          <div class="document">
+            <div class="document__item document__item--2 active">
+              <h3 class="document__title">Труба электросварная круглая</h3>
+              <div class="document__desc">
+                <p>ГОСТ 10704-91</p>
+                <p>ГОСТ 10705-80</p>
+                <p>ГОСТ 20295-85</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <div class='info'>
+          <img src="/assets/img/icons/PDF.png" alt="">
+          <p>Скачать  каталог продукции</p>
+        </div>
+      </li>
+
+      <li>
+        <a class='normal' href="/assets/files/test-file-download.txt" download>
+          <div class="document">
+            <div class="document__item document__item--3 active">
+              <h3 class="document__title">Труба электросварная круглая</h3>
+              <div class="document__desc">
+                <p>ГОСТ 10704-91</p>
+                <p>ГОСТ 10705-80</p>
+                <p>ГОСТ 20295-85</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <div class='info'>
+          <img src="/assets/img/icons/PDF.png" alt="">
+          <p>Скачать  каталог продукции</p>
+        </div>
+      </li>
+
+      <li>
+        <a class='normal' href="/assets/files/test-file-download.txt" download>
+          <div class="document">
+            <div class="document__item document__item--4 active">
+              <h3 class="document__title">Труба электросварная круглая</h3>
+              <div class="document__desc">
+                <p>ГОСТ 10704-91</p>
+                <p>ГОСТ 10705-80</p>
+                <p>ГОСТ 20295-85</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <div class='info'>
+          <img src="/assets/img/icons/PDF.png" alt="">
+          <p>Скачать  каталог продукции</p>
+        </div>
+      </li>
+
+      <li>
+        <a class='normal' href="/assets/files/test-file-download.txt" download>
+          <div class="document">
+            <div class="document__item document__item--5 active">
+              <h3 class="document__title">Труба электросварная круглая</h3>
+              <div class="document__desc">
+                <p>ГОСТ 10704-91</p>
+                <p>ГОСТ 10705-80</p>
+                <p>ГОСТ 20295-85</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <div class='info'>
+          <img src="/assets/img/icons/PDF.png" alt="">
+          <p>Скачать  каталог продукции</p>
+        </div>
+      </li>
+
+      <li>
+        <a class='normal' href="/assets/files/test-file-download.txt" download>
+          <div class="document">
+            <div class="document__item document__item--6 active">
+              <h3 class="document__title">Труба электросварная круглая</h3>
+              <div class="document__desc">
+                <p>ГОСТ 10704-91</p>
+                <p>ГОСТ 10705-80</p>
+                <p>ГОСТ 20295-85</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <div class='info'>
+          <img src="/assets/img/icons/PDF.png" alt="">
+          <p>Скачать  каталог продукции</p>
+        </div>
+      </li>
+
+      <li>
+        <a class='normal' href="/assets/files/test-file-download.txt" download>
+          <div class="document">
+            <div class="document__item document__item--7 active">
+              <h3 class="document__title">Труба электросварная круглая</h3>
+              <div class="document__desc">
+                <p>ГОСТ 10704-91</p>
+                <p>ГОСТ 10705-80</p>
+                <p>ГОСТ 20295-85</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <div class='info'>
+          <img src="/assets/img/icons/PDF.png" alt="">
+          <p>Скачать  каталог продукции</p>
         </div>
       </li>
 
@@ -177,7 +287,7 @@
         <a class='normal' href="/assets/files/test-file-download.txt" download>
           <div class="document">
             <div class="document__item document__item--1 active">
-              <h3 class="document__title">Труба <br>электросварная <br>круглая</h3>
+              <h3 class="document__title">Труба электросварная круглая</h3>
               <div class="document__desc">
                 <p>ГОСТ 10704-91</p>
                 <p>ГОСТ 10705-80</p>
@@ -188,121 +298,7 @@
         </a>
         <div class='info'>
           <img src="/assets/img/icons/PDF.png" alt="">
-          <p>Скачать <br> каталог продукции</p>
-        </div>
-      </li>
-
-      <li>
-        <a class='normal' href="/assets/files/test-file-download.txt" download>
-          <div class="document">
-            <div class="document__item document__item--1 active">
-              <h3 class="document__title">Труба <br>электросварная <br>круглая</h3>
-              <div class="document__desc">
-                <p>ГОСТ 10704-91</p>
-                <p>ГОСТ 10705-80</p>
-                <p>ГОСТ 20295-85</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <div class='info'>
-          <img src="/assets/img/icons/PDF.png" alt="">
-          <p>Скачать <br> каталог продукции</p>
-        </div>
-      </li>
-
-      <li>
-        <a class='normal' href="/assets/files/test-file-download.txt" download>
-          <div class="document">
-            <div class="document__item document__item--1 active">
-              <h3 class="document__title">Труба <br>электросварная <br>круглая</h3>
-              <div class="document__desc">
-                <p>ГОСТ 10704-91</p>
-                <p>ГОСТ 10705-80</p>
-                <p>ГОСТ 20295-85</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <div class='info'>
-          <img src="/assets/img/icons/PDF.png" alt="">
-          <p>Скачать <br> каталог продукции</p>
-        </div>
-      </li>
-
-      <li>
-        <a class='normal' href="/assets/files/test-file-download.txt" download>
-          <div class="document">
-            <div class="document__item document__item--1 active">
-              <h3 class="document__title">Труба <br>электросварная <br>круглая</h3>
-              <div class="document__desc">
-                <p>ГОСТ 10704-91</p>
-                <p>ГОСТ 10705-80</p>
-                <p>ГОСТ 20295-85</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <div class='info'>
-          <img src="/assets/img/icons/PDF.png" alt="">
-          <p>Скачать <br> каталог продукции</p>
-        </div>
-      </li>
-
-      <li>
-        <a class='normal' href="/assets/files/test-file-download.txt" download>
-          <div class="document">
-            <div class="document__item document__item--1 active">
-              <h3 class="document__title">Труба <br>электросварная <br>круглая</h3>
-              <div class="document__desc">
-                <p>ГОСТ 10704-91</p>
-                <p>ГОСТ 10705-80</p>
-                <p>ГОСТ 20295-85</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <div class='info'>
-          <img src="/assets/img/icons/PDF.png" alt="">
-          <p>Скачать <br> каталог продукции</p>
-        </div>
-      </li>
-
-      <li>
-        <a class='normal' href="/assets/files/test-file-download.txt" download>
-          <div class="document">
-            <div class="document__item document__item--1 active">
-              <h3 class="document__title">Труба <br>электросварная <br>круглая</h3>
-              <div class="document__desc">
-                <p>ГОСТ 10704-91</p>
-                <p>ГОСТ 10705-80</p>
-                <p>ГОСТ 20295-85</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <div class='info'>
-          <img src="/assets/img/icons/PDF.png" alt="">
-          <p>Скачать <br> каталог продукции</p>
-        </div>
-      </li>
-
-      <li>
-        <a class='normal' href="/assets/files/test-file-download.txt" download>
-          <div class="document">
-            <div class="document__item document__item--1 active">
-              <h3 class="document__title">Труба <br>электросварная <br>круглая</h3>
-              <div class="document__desc">
-                <p>ГОСТ 10704-91</p>
-                <p>ГОСТ 10705-80</p>
-                <p>ГОСТ 20295-85</p>
-              </div>
-            </div>
-          </div>
-        </a>
-        <div class='info'>
-          <img src="/assets/img/icons/PDF.png" alt="">
-          <p>Скачать <br> каталог продукции</p>
+          <p>Скачать  каталог продукции</p>
         </div>
       </li>
 
@@ -315,6 +311,7 @@
 
 
  
+    </div>
     <section class="feedback-wrapper">
 
   <div class="feedback">

@@ -1,40 +1,39 @@
-.mobile-menu {
-  height: 100%;
+.ssm-overlay {
   position: fixed;
-  left: 0;
   top: 0;
-  transition: left 0.3s ease-in-out;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.5);
   display: none;
-  z-index: 100;
-
-  @include media-breakpoint-down(sm) {
-    display: block;
-  }
-}
-
-.mobile-menu.open-sidebar {
-  left: 240px;
-
-
-  #sidebar-toggle {
-    left: 250px;
-  }
+  z-index: 50;
 }
 
 .sidebar-menu {
   background: $color-blue;
-  position: absolute;
-  width: 240px;
-  height: 100%;
-  left: -240px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
   border-right: 3px solid $color-white;
-  box-shadow: 3px 0px 14px rgba(0,0,0,.4);
+  height: 100%;
+  width: 280px;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  position: fixed;
+  overflow-y: auto;
+  overflow-x: visible;
+  transform: translate(-280px,0);
+
+  &.ssm-nav-visible {
+    box-shadow: 3px 0 14px rgba(0,0,0,.4);
+  }
 
   &__search {
     margin: 0 auto 20px;
-    text-align: center
+    text-align: center;
+
+    input {
+      border: none;
+      padding: 5px;
+    }
   }
 
   &__logo {
@@ -52,19 +51,21 @@
     a {
       padding: 15px 20px;
       font-size: 16px;
-      font-weight: 100;
       color: white;
       text-decoration: none;
       display: block;
       border-bottom: 1px solid $color-white;
       transition: background 0.3s ease-in-out;
+      font-weight: 600;
 
       &:hover {
         background: $color-white;
         color: $color-blue;
       }
+    }
 
-      &:first-child {
+    &:first-child {
+      a {
         border-top: 1px solid $color-white;
       }
     }
@@ -75,16 +76,16 @@
   }
 }
 
-#sidebar-toggle {
+.gamburger {
   background: $color-blue-gradient;
   border-radius: 3px;
-  display: block;
   padding: 10px 9px 8px;
   float: left;
   position: fixed;
   left: 8px;
   top: 14px;
   box-shadow: $box-shadow;
+  display: none;
 
   &:hover {
     background: $color-blue-gradient-revert;
@@ -97,5 +98,9 @@
     height: 2px;
     background-color: #fff;
     border-radius: 1px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    display: block;
   }
 }

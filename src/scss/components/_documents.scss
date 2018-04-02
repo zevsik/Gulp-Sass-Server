@@ -4,11 +4,19 @@ $wet-asphalt: #34495E;
 $midnight-blue: #2C3E50;
 $clouds: #ECF0F1;
 
+.documents-wrapper-gap {
+  margin-top: -60px;
+}
+
 .documents-wrapper {
   padding: 60px 0 20px;
 
   @include media-breakpoint-down(sm) {
     margin-bottom: 40px;
+
+    &.home-page {
+      margin-bottom: 0;
+    }
   }
 
   ul {
@@ -38,7 +46,7 @@ $clouds: #ECF0F1;
     @include media-breakpoint-down(sm) {
       width: 180px;
       height: 180px;
-      perspective: 570px;
+      perspective: 360px;
     }
 
     a  {
@@ -91,6 +99,18 @@ $clouds: #ECF0F1;
       color: $text-color;
       font-weight: 600;
     }
+
+    @include media-breakpoint-down(sm) {
+      padding: 15px;
+
+      img {
+        width: 100px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
   }
 }
 
@@ -109,6 +129,30 @@ $clouds: #ECF0F1;
       background: url('../img/pipes/pipe-1.png') center no-repeat;
     }
 
+    &--2 {
+      background: url('../img/pipes/pipe-3.png') center no-repeat;
+    }
+
+    &--3 {
+      background: url('../img/pipes/pipe-4.png') center no-repeat;
+    }
+
+    &--4 {
+      background: url('../img/pipes/pipe-5.png') center no-repeat;
+    }
+
+    &--5 {
+      background: url('../img/pipes/pipe-6.png') center no-repeat;
+    }
+
+    &--6 {
+      background: url('../img/pipes/pipe-7.png') center no-repeat;
+    }
+
+    &--7 {
+      background: url('../img/pipes/pipe-8.png') center no-repeat;
+    }
+
     @include media-breakpoint-down(sm) {
       justify-content: center;
       width: 180px;
@@ -121,9 +165,13 @@ $clouds: #ECF0F1;
   &__title {
     font-size: 24px;
     margin-bottom: 15px;
+    align-items: baseline;
+    display: flex;
+    font-weight: 600;
 
     @include media-breakpoint-down(sm) {
       font-size: 18px;
+      font-weight: 400;
     }
   }
 
@@ -132,6 +180,7 @@ $clouds: #ECF0F1;
       font-size: 13px;
       margin-bottom: 0;
       text-decoration: underline;
+      font-weight: 600;
     }
 
     p:hover {

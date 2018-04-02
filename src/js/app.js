@@ -95,5 +95,5 @@ $(function () {
 
 
 $(document).ready(function() {
-  $('.nav').slideAndSwipe();
+  $('.sidebar-menu').slideAndSwipe();
 });

@@ -7,6 +7,11 @@
   background: $color-white;
   border: 1px solid $border-color;
 
+  &--gap {
+    padding: 0;
+    border: 0;
+  }
+
   &__city {
     font-size: 20px;
     margin-bottom: 20px;
@@ -27,12 +32,36 @@
       background-color: #3f7cc2;
     }
 
+    &--blue {
+      background-color: #2360a6;
+    }
+
     p {
       font-size: 18px;
     }
 
     p + p {
       font-size: 16px;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 20px;
+
+    &--gap {
+      padding: 0;
+    }
+
+    &__address {
+      padding: 20px;
+
+      p {
+        font-size: 16px;
+      }
+
+      p + p {
+        font-size: 14px;
+      }
     }
   }
 }

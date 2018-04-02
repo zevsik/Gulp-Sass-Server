@@ -4,7 +4,8 @@
   a {
     position: relative;
     display: block;
-    margin-bottom: 20px;
+    max-width: 300px;
+    margin: 0 auto 20px;
 
     &:before {
       content: "";
@@ -20,6 +21,11 @@
     img {
       width: 100%;
       object-fit: cover;
+      max-height: 160px;
+
+      @include media-breakpoint-down(sm) {
+        max-height: inherit;
+      }
     }
   }
 }

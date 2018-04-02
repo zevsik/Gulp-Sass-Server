@@ -2,10 +2,11 @@
   padding: 50px 0;
 
   &__item  {
-    padding: 0 40px;
+    padding: 0 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
   }
 
   &__title {
@@ -19,6 +20,16 @@
 
     img {
       width: 100%;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    &__item {
+      padding: 0 15px;
+    }
+
+    &__title {
+      font-size: 13px;
     }
   }
 }

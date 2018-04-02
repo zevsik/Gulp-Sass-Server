@@ -38,6 +38,10 @@
       padding: 33px 40px 60px;
     }
 
+    @media (max-width: 450px) {
+      padding: 33px 20px 60px;
+    }
+
     .form-group {
       margin-bottom: 32px;
       display: flex;
