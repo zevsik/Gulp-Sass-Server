@@ -47,11 +47,22 @@
     @include media-breakpoint-down(md) {
       font-size: 30px;
     }
+
+    @include media-breakpoint-down(sm) {
+      padding-top: 25px;
+      font-size: 25px;
+    }
   }
 
   &__btn {
     z-index: 12;
     position: relative;
+
+    @include media-breakpoint-down(sm) {
+      width: 220px;
+      height: 46px;
+      font-size: 19px;
+    }
   }
 }
 
@@ -68,6 +79,10 @@
   max-height: 585px;
   position: relative;
   @extend .center;
+
+  @include media-breakpoint-down(sm) {
+    padding: 20px;
+  }
 
   &::after {
     content: '';

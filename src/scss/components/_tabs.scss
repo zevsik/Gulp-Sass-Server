@@ -14,6 +14,14 @@
       color: #2261a9;
     }
   }
+
+  @include media-breakpoint-down(sm) {
+    padding: 20px;
+
+    a {
+      font-size: 16px;
+    }
+  }
 }
 
 .tab-content-home {
@@ -68,6 +76,12 @@
 
     &__info--border {
       padding-bottom: 20px;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .d-flex {
+      flex-direction: column;
     }
   }
 }
