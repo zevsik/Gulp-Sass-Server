@@ -9,7 +9,7 @@ $(function () {
       $(toggle_el).toggleClass("open-sidebar");
     });
     $(".swipe-area").swipe({
-      swipeStatus:function(event, phase, direction, distance, duration, fingers)
+      swipeStatus:function(event, phase, direction)
       {
         if (phase=="move" && direction =="right") {
           $(".container").addClass("open-sidebar");
