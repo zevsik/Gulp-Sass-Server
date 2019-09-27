@@ -23,67 +23,6 @@
   }
 }
 
-/// Make a context based selector a little more friendly
-/// @author Hugo Giraudel
-/// @param {String} $context
-@mixin when-inside($context) {
-  #{$context} & {
-    @content;
-  }
-}
-
-@mixin button-variant($color, $background, $border) {
-
-  $darken-bg: darken($background, 10%);
-  $darken-bg-17: darken($background, 17%);
-  $darken-border-focus: darken($border, 25%);
-  $darken-border-hover: darken($border, 12%);
-  $darken-border-active: darken($border, 12%);
-  $darken-border-active-deep: darken($border, 25%);
-
-  border-color: $border;
-  background-color: $background;
-  color: $color;
-
-  &.focus,
-  &:focus {
-    border-color: $darken-border-focus;
-    background-color: $darken-bg;
-    color: $color;
-  }
-
-  &:hover {
-    border-color: $darken-border-hover;
-    background-color: $darken-bg;
-    color: $color;
-  }
-
-  &.active,
-  &:active,
-  .open>&.dropdown-toggle {
-    border-color: $darken-border-active;
-    background-image: none;
-    background-color: $darken-bg;
-    color: $color;
-
-    &.focus,
-    &:focus,
-    &:hover {
-      border-color: $darken-border-active-deep;
-      background-color: $darken-bg-17;
-      color: $color;
-    }
-  }
-
-  &.disabled,
-  &[disabled],
-
-  .badge {
-    background-color: $color;
-    color: $background;
-  }
-}
-
 /* paddings, margins and width */
 $i: 0;
 @while $i < 51 {

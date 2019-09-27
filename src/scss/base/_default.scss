@@ -2,7 +2,7 @@
 // Global UI Styling
 //---------------------------------------------------------
 body {
-  fon-size: $font-size;
+  font-size: $font-size;
   color: $text-color;
   font-family: $font-default;
   transition: $transition;
@@ -20,15 +20,6 @@ html {
   text-rendering: optimizeLegibility;
 }
 
-a {
-  @include on-event {
-    text-decoration: underline;
-    color: $color-white;
-  }
-  text-decoration: none;
-  color: $color-white;
-}
-
 ul,
 ol {
   margin: 0;
@@ -38,4 +29,8 @@ ol {
 
 p {
   margin: 0 0 5px;
+}
+
+.nowrap {
+  white-space: nowrap;
 }

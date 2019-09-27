@@ -47,7 +47,7 @@ gulp.task('js', function () {
 });
 
 gulp.task('tinypng', function () {
-  gulp.src('src/img/png/*.{png,jpg,jpeg}')
+  gulp.src('src/img/*.{png,jpg,jpeg}')
     .pipe(tinypng({
       key: 'omLn47dzpaSLyK2Tg01Gc6jnEduzGonp',
       log: true,

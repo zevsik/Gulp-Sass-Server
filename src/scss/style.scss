@@ -1,33 +1,19 @@
-// Bootstrap Grid
-@import "../../node_modules/bootstrap/scss/bootstrap-grid";
-
 // UTILS
 @import 'utils/mixins';
 @import 'utils/variables';
 
 // Base
-@import 'base/breakpoints';
 @import 'base/default';
 @import 'base/fonts';
-@import 'base/helpers';
-@import 'base/normalize';
-@import 'base/print';
-@import 'base/typography';
-
 
 // COMPONENTS & ELEMENTS
 @import 'components/buttons';
-@import 'components/inputs';
-
+@import 'components/accordion';
 
 // PARTIALS
 @import 'partials/header';
-@import 'partials/nav';
-@import 'partials/nav-mobile';
-@import 'partials/sidebar';
 @import 'partials/main';
 @import 'partials/footer';
-
 
 // VENDOR
 @import 'vendor/external';
